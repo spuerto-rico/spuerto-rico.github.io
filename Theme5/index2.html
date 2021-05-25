@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <title>Theme 5 V.2</title>
+    
+  </head>
+  <body>
+    <div class="container-fluid page-padding border-black-decor">
+        <div class="row border mt-5 mb-4 pt-1 pb-1">
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border ps-0 pe-0 ">
+                <div class="input-group input-group-sm  input-group-lg divider remove-divider">
+                    <span class="input-group-text border-0 background-color" ><i class="bi bi-search "></i></span>
+                    <input type="text" class="form-control border-0 " placeholder="Search for Events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border ps-0 pe-0">
+                <div class="input-group input-group-sm input-group-lg  ">
+                    <span class="input-group-text border-0 background-color" ><i class="bi bi-geo-alt"></i></span>
+                    <input type="text" class="form-control border-0 " placeholder="In a Location" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4  p-0">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-4 col-lg-4 d-flex align-items-center hide-mobile "> 
+                        <button type="button" class="btn btn-sm btn-lg find-button text-nowrap " >Find Events</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-4 d-flex align-items-center pe-0">
+                        <div class="middle-align1 ">
+                            <div class="input-group input-group-sm input-group-lg flex-nowrap "   >
+                                <span class="input-group-text border-0 show-filter"><i class="bi bi-sliders"></i></span>
+                                <span class="input-group-text border-0 show-filter"> Show Filters</span>
+                            </div>  
+                        </div>
+                        <div class="mobile-divider">&nbsp</div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-4 d-flex align-items-center ps-0 " >
+                        <div class="middle-align ">
+                            <div class="dropdown"  >
+                                <button class="btn dropdown-toggle list" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                   <b> List</b>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-12  hide-desktop align-items-center show-mobile mobile-mt-3"> 
+                        <button type="button" class="btn find-button text-nowrap " >Find Events</button>
+                    </div>
+                </div>
+             </div>    
+        </div>
+        <div class="row  m-bottom  events " >
+            <div class="col p-0 ">
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Virtual Events</a> 
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Featured Events</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Event Category</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2"  >Organizers</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Tags</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Day</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Time</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Cost($)</a> 
+            </div>
+        </div>
+        
+        <div class="row  m-bottom ">
+            <div class="col p-0">
+                <table class="width-now" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td> <span class="name label-Now" >Now </span> </td>
+                        <td> <span class="name label-Now" >-</span> </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="btn dropdown-button dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                    April 23
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">April 24</a></li>
+                                    <li><a class="dropdown-item" href="#">April 25</a></li>
+                                    <li><a class="dropdown-item" href="#">April 26</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row m-bottom ">
+            <div class="col-12 p-0">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="td-width"> <span class="font-date" >April 2021 </span> </td>
+                        <td ><div class="line">&nbsp;</div> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row featured-event  ">
+            <div class="col-1 paddings text-center date dhide-desktop"  >
+                    <label class="font-day ">SAT</label>
+                    <label class="font-day2">24</label> 
+            </div>
+            <div class="col paddings">
+                <div class="row inn" >
+                    <div class="d-border date-event dhide-tablet hide-mobile">
+                        <div class="row  ">
+                            <label class="label-1">April 24 Saturday</label>
+                            <label class="label-2">@ 3pm - 5pm</label>
+                        </div>
+                    </div>
+                    <div class="d-border date-content">
+                        <div class="row bookmark dhide-tablet hide-mobile">
+                            <div class="col-1 add-col">
+                                <i class="bi bi-bookmark-fill bookmark-color" ></i>
+                            </div>  
+                            <div class="col add-pad">
+                                <label class="label-feature"><b>Featured Events </b></label>
+                            </div>
+                        </div>
+                        <div class="row non ">
+                            <div class="col add-pad">
+                                <label class="label-2">April 24 Saturday @ 3pm - 5pm</label>
+                            </div>
+                        </div>
+                        <div class="row bookmark dhide-desktop show-mobile">
+                            <div class="col ">
+                                <i class="bi bi-bookmark-fill bookmark-color" ></i>
+                                <label class="label-feature"><b>Featured Events </b></label>
+                                <label class="label-1">April 24 Saturday</label>
+                                <label class="label-2">@ 3pm - 5pm</label>
+                            </div>
+                        </div>
+                        <div class="row event-title" ><label> International Women's Day 2021</label></div>
+                        <div class="d-border date-location dhide-desktop show-mobile">
+                            <div class="row event-address " >
+                                <div class="col-1 mi-add">
+                                    <i class="bi bi-geo-alt bi-address " ></i>
+                                </div>  
+                                <div class="col m-add">
+                                    <label><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row event-detail "> <p class="paragrah-wrap" >International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                                the world and is a call to action for accelerating genter equality. During March and April 2021. Women of the world want and deserve
+                                an equal future free from stigma, stereotypes and violence; a future that's sustainable, peaceful, with equal rights and opportunities
+                                for all. To get us there, the world needs women at every table where decitions are needed. International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                                the world and is a call to action for accelerating genter equality. During March and April 2021. Women of the world want and deserve
+                                an equal future free from stigma, stereotypes and violence; a future that's sustainable, peaceful, with equal rights and opportunities
+                                for all. To get us there, the world needs women at every table where decitions are needed.</p>
+                                <label><b><a  href="view.html" class="continue" >Continue Reading</a></b></label>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-person dhide-tablet hide-mobile">
+                        <div class="row event-address " >
+                            <div class="col ">
+                                <label class="label-trainer">Trainer </label>
+                                <label class="label-name">Bernshausen, Amelie</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-location dhide-tablet hide-mobile">
+                        <div class="row event-address " >
+                            <div class="col-1 ">
+                                <i class="bi bi-geo-alt bi-address" ></i>
+                            </div>  
+                            <div class="col ">
+                                <label><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-price dhide-tablet hide-mobile">
+                        <div class="row font-price  ">
+                            <p ><b>Net Price : $350</b>
+                                excl. 19.00% VAT corr. $66.50
+                                gross price $400
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 font-price d-border dhide-desktop show-mobile ">
+                        <div class="row d-flex jflex-row bd-highlight ">
+                            <span class="mobile-price ">
+                                <label class="space1"><b>Net Price : $350</b></label>
+                                <label class="divider1" >&nbsp;</label>
+                                <label class="space1 space2 space3" >excl. 19.00% VAT corr. $66.50</label>
+                                <label class="divider2" >&nbsp;</label>
+                                <label class="space2">gross price $400</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center hide-sm-screen date-button">
+                        <div class="row text-center" > 
+                            <div class="col">
+                                <button type="button" class="btn signup-button text-nowrap ">Sign Up Now</button>
+                                <button type="button" class="btn view-button text-nowrap " >View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row non-featured-event  ">
+            <div class="col-1 paddings text-center date dhide-desktop"  >
+                    <label class="font-day ">SUN</label>
+                    <label class="font-day2">25</label> 
+            </div>
+            <div class="col paddings">
+                <div class="row inn" >
+                    <div class="d-border date-event dhide-tablet hide-mobile">
+                        <div class="row  ">
+                            <label class="label-1">April 25 Sunday</label>
+                            <label class="label-2">@ 3pm - 5pm</label>
+                        </div>
+                    </div>
+                    <div class="d-border date-content">
+                        <div class="row bookmark dhide-tablet hide-mobile">
+                            <div class="col-1 add-col">
+                                <i class="bi bi-bookmark-fill bookmark-color" ></i>
+                            </div>  
+                            <div class="col add-pad">
+                                <label class="label-feature"><b>Featured Events </b></label>
+                            </div>
+                        </div>
+                        <div class="row non ">
+                            <div class="col add-pad">
+                                <label class="label-2">April 25 Sunday @ 3pm - 5pm</label>
+                            </div>
+                        </div>
+                        <div class="row bookmark dhide-desktop show-mobile">
+                            <div class="col ">
+                                <i class="bi bi-bookmark-fill bookmark-color" ></i>
+                                <label class="label-feature"><b>Featured Events </b></label>
+                                <label class="label-1">April 25 Sunday</label>
+                                <label class="label-2">@ 3pm - 5pm</label>
+                            </div>
+                        </div>
+                        <div class="row event-title" ><label> Beam Day on Google Open Source 2021</label></div>
+                        <div class="d-border date-location dhide-desktop show-mobile">
+                            <div class="row event-address " >
+                                <div class="col-1 mi-add">
+                                    <i class="bi bi-geo-alt bi-address " ></i>
+                                </div>  
+                                <div class="col m-add">
+                                    <label><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row event-detail "> <p class="paragrah-wrap" >International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                                the world and is a call to action for accelerating genter equality. During March and April 2021. Women of the world want and deserve
+                                an equal future free from stigma, stereotypes and violence; a future that's sustainable, peaceful, with equal rights and opportunities
+                                for all. To get us there, the world needs women at every table where decitions are needed. International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                                the world and is a call to action for accelerating genter equality. During March and April 2021. Women of the world want and deserve
+                                an equal future free from stigma, stereotypes and violence; a future that's sustainable, peaceful, with equal rights and opportunities
+                                for all. To get us there, the world needs women at every table where decitions are needed.</p>
+                                <label><b><a  href="view.html" class="continue" >Continue Reading</a></b></label>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-person dhide-tablet hide-mobile">
+                        <div class="row event-address " >
+                            <div class="col ">
+                                <label class="label-trainer">Trainer </label>
+                                <label class="label-name">Bernshausen, Amelie</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-location dhide-tablet hide-mobile">
+                        <div class="row event-address " >
+                            <div class="col-1 ">
+                                <i class="bi bi-geo-alt bi-address" ></i>
+                            </div>  
+                            <div class="col ">
+                                <label><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-border d-flex align-items-center date-price dhide-tablet hide-mobile">
+                        <div class="row font-price  ">
+                            <p ><b>Net Price : $350</b>
+                                excl. 19.00% VAT corr. $66.50
+                                gross price $400
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 font-price d-border dhide-desktop show-mobile ">
+                        <div class="row d-flex jflex-row bd-highlight ">
+                            <span class="mobile-price ">
+                                <label class="space1"><b>Net Price : $350</b></label>
+                                <label class="divider1" >&nbsp;</label>
+                                <label class="space1 space2 space3" >excl. 19.00% VAT corr. $66.50</label>
+                                <label class="divider2" >&nbsp;</label>
+                                <label class="space2">gross price $400</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center hide-sm-screen date-button">
+                        <div class="row text-center" > 
+                            <div class="col">
+                                <button type="button" class="btn signup-button text-nowrap ">Sign Up Now</button>
+                                <button type="button" class="btn view-button text-nowrap " >View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black !important;
+        opacity: 1; /* Firefox */
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: black  !important;
+        }
+        ::-ms-input-placeholder { /* Microsoft Edge */
+        color: black !important;
+        }
+        .border-black-decor , .border { 
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .input-group-lg  i {
+            padding-left: 10px;
+        }
+        .input-group-lg  i, .input-group-lg input {
+            font-size: 18px !important;
+        }
+        .input-group-lg span {
+            font-size: 18px !important;
+        }
+        .bi-sliders,.show-filter,.background-color{
+            background-color:white ;    
+        }
+        .line{
+            border-top: 1px solid  rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .page-padding {
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .m-bottom{
+            margin-bottom: 35px;
+        }
+        .find-button {
+            width: 186px;
+            height: 58px;
+            background: #FF6633;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+        }
+        .round-button{
+            border-radius: 25px; 
+            background-color: #f4f4f4;  
+            font-size:18px !important;
+            color:  #130f26;
+            word-wrap: break-word;
+            padding: 15px 25px;
+        }
+        .dropdown-button {
+            background-color: none;
+            font-size: 30px;
+            font-weight:bold;
+            padding: 0px 0px 0px 5px;
+        }
+        .label-Now{
+            font-size: 30px; 
+        }
+        .font-date{
+            font-size: 20px;
+            width: 100px;
+        }
+        .td-width{
+            width: 100px;
+        }
+        .font-nav{
+            font-size: 15px;
+            font-stretch: condensed;
+        }
+        .width-now{
+            width: 200px;
+        }
+        .divider,.divider1,.divider2{ 
+            border-right: 1px solid lightgray;
+        }
+        .hide-desktop,.dhide-desktop{
+            display: none;
+        }
+        textarea:hover, 
+        input:hover, 
+        textarea:active, 
+        input:active, 
+        textarea:focus, 
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active
+        {
+            outline:0px !important;
+            -webkit-appearance:none;
+            box-shadow: none !important;
+        }
+        .middle-align  {
+            margin-right: auto; 
+            margin-left: 78px ;
+        }
+        .middle-align1{
+            margin-right: 45px; 
+            margin-left: 20px;
+        }
+        .mobile-divider {
+            border-right: 1px solid rgba(0,0,0,0.1) !important;
+            height: 33px;
+        }
+        /* -------------- */
+        .featured-event{
+            border: 1px solid rgba(0,0,0,0.1);
+            margin-top: 3%;
+            border-left-color: rgb(240, 218, 22) !important;
+            border-left-width: 3px !important;
+        }
+        .featured-event .bookmark-color{
+            color: #FFCC33;
+        }
+        .non-featured-event{
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .non-featured-event .bookmark i, .non-featured-event .bookmark .label-1, .non-featured-event .bookmark {
+            display: none !important;
+        }
+        .non-featured-event .bookmark .label-2{
+            margin-inline-start: 0px ;
+        }
+        .d-border{
+            border-right: 1px solid rgba(0,0,0,0.1)
+        }
+        .label-1,.label-2,.event-detail,.continue,.label-name{
+            font-size: 18px;
+        }
+        .label-feature,.event-address,.font-price{
+            font-size: 16px;
+        }
+        .event-title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .event-title label {
+            width:100%;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        .label-trainer{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .paragrah-wrap {
+            width:100%;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            background:#fff;
+            margin-bottom: 0px;
+        }
+        .signup-button {
+            width: 170px;
+            height: 53px;
+            background: #FF6633;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+        }
+        .view-button{
+            margin-top: 30px;
+            width: 170px;
+            height: 53px;
+            border: 2px solid #FF6633;
+            box-sizing: border-box;
+            border-radius: 5px;
+            color: #FF6633;
+            font-size: 18px;
+        }
+        .non-featured-event .date-event {
+            width: 12.11% !important;
+            padding: 49px 19px 20px 19px;
+        }
+        .non-featured-event .date-person {
+            width: 13.89% !important;
+        }
+        .non-featured-event .non {
+            display: none;
+        }
+        .featured-event .non {
+            display: none;
+        }
+        .date-event {
+            width: 12%;
+            padding: 73px 19px 20px 19px;
+            line-height: 35px;
+        }
+        .date-content {
+            width: 29%;
+            padding: 25px;
+        }
+        .date-person {
+            width: 14%;
+            padding: 25px;
+            line-height: 35px;
+        }
+        .date-location {
+            width: 16%;
+            padding: 25px;
+            
+        }
+        .date-price{
+            width: 15%;
+            padding: 25px;
+            line-height: 35px;
+        }
+        .date-button {
+            width: 10%;
+            padding: 25px;
+        }
+        .add-col {
+            width: 6.33%;
+        }
+        .event-title , .add-col {
+            margin-bottom: 15px;
+        }
+        .header {
+            padding: 10px 25px;
+        }
+        @media (min-width: 768px) and (max-width: 1600px) {
+  
+            .find-button {
+                padding: 2px 10px !important;
+                width: 103px;
+                height: 34px;
+                left: 407px;    
+                top: 106px;
+                font-size: 13px;
+            }
+            .find-button:hover {
+                padding: 2px 10px !important;
+            }
+            .list{
+                font-size: 14px !important;
+            }
+            .input-group-lg  i {
+                padding-left: 2px;
+            }
+            .input-group-lg  i, .input-group-lg input {
+                font-size: 14px !important;
+            }
+            .input-group-lg span {
+                font-size: 14px !important;     
+            }
+            .middle-align1 {
+                margin-right: 17px !important;
+                margin-left: auto !important;
+            }
+            .middle-align{
+                margin-right: auto !important   ; 
+                margin-left: 40px !important;
+            }
+            .font-date{
+                font-size: 18px !important;
+            }
+            .label-Now{
+                font-size: 22px !important;
+            }
+            .dropdown-button{
+                font-size: 22px !important;
+                font-weight: bold;
+            }
+            .round-button {
+                padding: 10px 18px !important;
+                font-size: 15px !important;
+            }
+            /* -------------- */
+            .dhide-desktop{
+                display: block !important;
+            }
+            .dhide-desktop .label-feature,.dhide-desktop .label-1{
+                margin-left: 10px !important;
+            }
+            .dhide-tablet {
+                display: none !important;
+            }
+            .date-event {
+                width: 100%;
+                padding: 0px;
+                line-height: initial;
+            }
+            .date-content {
+                width: 100%;
+                padding: 0px;
+            }
+            .date-person {
+                width: 100%;
+                padding: 0px;
+                line-height: initial;
+            }
+            .date-location {
+                width: 100%;
+                padding: 0px;
+                
+            }
+            .date-button {
+                width: 100%;
+                padding: 0px;
+                margin-top: 30px !important;
+            }
+            .d-border {
+                border-right: 0px;
+            }
+            .non-featured-event .paddings, .featured-event .paddings{
+                padding-top: 25px !important;
+                padding-bottom: 25px !important;
+                padding-right: 0px !important;
+                padding-left: 20px !important;
+            }
+            .featured-event .event-title {
+                margin-top: 17px !important;
+            }
+            .non-featured-event .event-title {
+                margin-top: 0px !important;
+            }
+            .event-detail,.continue,.signup-button,.view-button{
+                font-size: 16px !important;
+            }
+            .event-detail{
+                margin-top: 17px !important;
+                margin-right: 30px !important;
+            }
+            .mi-add{
+                padding-right: 0px !important;
+                width: 7% !important;
+            }
+            .m-add{
+                padding-left: 0px !important;
+            }
+            .font-price{
+                padding-left: 0px !important;
+                margin-top: 30px !important;
+            }
+            .signup-button,.view-button{
+                width: 133px !important;
+                height: 49px !important;
+            }
+            .view-button{
+                margin-left: 15px !important;
+                margin-top: 0px;
+            }
+            .space1{
+                margin-right: 15px;
+            }
+            .space2{
+                margin-left: 15px;
+            }
+            .font-day{
+                text-transform: capitalize !important;
+                font-size: 14px !important;
+                color: #939393;
+            }
+            .font-day2{
+                text-align:center;
+                font-size:26px;
+                font-weight: bold;
+            }
+            .paddings .inn {
+                padding-left: 10px;
+            }
+            .label-feature, .label-1, .label-2{
+                font-size: 16px;
+            }
+            .non-featured-event .non {
+                display: block;
+                margin-bottom: 15px;
+            }
+            .featured-event .non {
+                display: none;
+            }
+            .event-title label {
+                width:100%;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }   
+        @media only screen and (max-width: 411px) {
+            .col-xs-6 {
+                flex: 0 0 auto;
+                width: 50% !important;
+            }
+            .signup-button,.view-button{
+                width: 118px !important;
+                height: 40px !important;
+                font-size: 14px !important;
+            }
+            
+            .mobile-price{
+                line-height: 25px ;
+                margin-top: 20px;
+            }
+            .divider1 {
+                display: none;
+            }
+        }  
+        @media only screen and (max-width: 767px) {
+            .view-button {
+                margin-top: 0px !important;
+            }
+            .date, .hide-mobile,.divider2 {
+                display: none !important;
+            }
+            .round-button {
+                padding: 9px 7px !important;
+                font-size: 15px !important;
+            }
+            .label-Now{
+                font-size: 20px;
+            }
+            .dropdown-button {
+                font-size: 20px;
+                font-weight:bold;
+            }
+            .events {
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap; 
+            }
+            .border,.remove-divider   {
+                border: none !important;
+            }
+            .show-mobile {
+                display: block !important;
+            }
+            .mobile-border {
+                border: 1px solid rgba(0,0,0,0.1) !important;
+                margin-bottom: 10px;
+            }
+            .mobile-divider {
+                border-right: 1px solid rgba(0,0,0,0.1) !important;
+            }
+            .middle-align{
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+            }
+            .middle-align1{
+                margin-right: 10px !important; 
+                margin-left: 0px !important;
+                width: 100% !important;
+            }
+            .mobile-mt-3{
+                margin-top: 15px !important;
+                margin-bottom: 20px !important;
+            }
+            .mb-4, .pt-1,.pb-1{
+                margin-bottom: 0px !important;
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;;
+            }
+            .col-sm-3, .col-sm-6 {
+                width: 100% !important;
+            }
+            .input-group-sm i {
+                font-size: 20px !important;
+                padding-left: 2px;
+            }
+            .input-group-sm input,.input-group-sm span,.font-date,.show-filter {
+                font-size: 16px !important;
+            }
+            .col-xs-6 {
+                flex: 0 0 auto;
+                width: 45%;
+            }
+            
+            .find-button{
+                width: 100% !important;
+                font-size: 18px !important;
+            }
+            /* ---------------- */
+            .date-event {
+                width: 100%;
+                padding: 15px 12px;
+                line-height: initial;
+            }
+            .date-content {
+                width: 100%;
+                padding: 15px 12px 0px 12px !important;
+            }
+            .date-person {
+                width: 100%;
+                padding: 15px 12px;
+                line-height: initial;
+            }
+            .date-location {
+                width: 100%;
+                padding:0px !important;
+            }
+            .paragrah-wrap {
+                -webkit-line-clamp: 6;
+            }
+            .date-button {
+                width: 100%;
+            }
+            .date-button .col {
+                padding: 0px;
+            }
+            .signup-button,.view-button{
+                width: 120px !important;
+                height: 40px !important;
+                font-size: 16px !important;
+            }
+            .view-button{
+                margin-left: 10px !important;
+            }
+            .d-border {
+                border-right: 0px;
+            }
+            .label-feature {
+                margin-right: 10px;
+                margin-left: 6px;
+            }
+            .featured-event .bookmark-color,.label-feature, .label-1, .label-2{
+                font-size: 12px !important;
+            }
+            .space3 {
+                margin-left: 5px;
+            }
+            .event-title {
+                font-size: 20px !important;
+                margin-top: 15px !important;
+            }
+            .event-title label {
+                width:100%;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .event-detail{
+                margin-top: 15px !important;
+            }
+            .featured-event{
+                border-left-width: 3px !important;
+            }
+            .event-address,.event-detail,.font-price,.continue{
+                font-size: 14px !important;
+            }
+            .m-add{
+                padding-left: 8px !important;
+            }
+            .d-display .label-1, .d-display .label-2 {
+                display: contents !important;
+            }
+            .non-featured-event .non {
+                display: block;
+            }
+            .featured-event .non {
+                display: none;
+            }
+            .mobile-price{
+                line-height: 25px ;
+                margin-top: 20px;
+            }
+            .m-bottom {
+                margin-bottom: 15px !important;
+            }
+        }
+
+        
+    </style>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" ></script>
+    -->
+  </body>
+</html>
