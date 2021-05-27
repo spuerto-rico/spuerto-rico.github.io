@@ -132,7 +132,7 @@
                                 <label class="space1"><b>Net Price : $350</b></label>
                                 <label class="divider" >&nbsp;</label>
                                 <label class="space1 space2" >excl. 19.00% VAT corr. $66.50</label>
-                                <label class="divider" >&nbsp;</label>
+                                <label class="divider hide-mobile" >&nbsp;</label>
                                 <label class="space2">gross price $400</label>
                             </span>
                         </div>
@@ -206,7 +206,7 @@
         color: black !important;
         }
         .border-black-decor , .border { 
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 0px solid rgba(0,0,0,0.1);
         }
         .image {
             width: 100%;
@@ -322,8 +322,8 @@
         }
         .date{
             width: 5%;
-            padding-left: 30px;
-            padding-right: 37px;
+                /* padding-left: 30px;
+                padding-right: 50px; */
         }
         .td-width{
             width: 100px;
@@ -387,6 +387,9 @@
             margin-top: 23px ;
             font-size: 18px;
             line-height: 30px;
+        }
+        .event-detail{
+            margin-right: 10px;
         }
         .event-address p, .event-detail p{
             margin-bottom: 0% !important;
@@ -492,11 +495,15 @@
             }
             .font-price{
                 margin-top: 20px !important;
+                width: 135%;
+            }
+            .mobile-price{
+                width: 100%;
             }
             .date{
-                width: 10% !important;
-                padding-left: 20px !important;
-                padding-right: 40px !important;
+                width: 5% !important;
+                /* padding-left: 20px !important;
+                padding-right: 40px !important; */
             }
             .bookmark-color{
                 color: #FFCC33;
@@ -578,7 +585,7 @@
             }
             .font-price{
                 font-size: 14px !important;
-                margin-top: 15px !important;
+                margin-top: 10px !important;
             }
             .event-detail p{
                 line-height: 25px !important;
@@ -588,12 +595,6 @@
                 overflow-x: auto;
                 overflow-y: hidden;
                 white-space: nowrap; 
-            }
-
-            .signup-button,.view-button{
-                /* width: 133px !important;
-                height: 49px !important; */
-                font-size: 16px;
             }
             .view-button{
                 margin-left: 15px !important;
@@ -708,6 +709,15 @@
                 /* height: 49px !important; */
                 width: 100% !important;
                 font-size: 18px !important;
+            }
+            .signup-button, .view-button{
+                width: 133px;
+                height: 49px;
+                font-size: 16px;
+                margin-bottom: 30px !important;
+            }
+            .font-price{
+                width: 100%;
             }
         }
 

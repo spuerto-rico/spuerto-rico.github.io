@@ -109,16 +109,16 @@
         
         <!-- Event Body -->
         <div class="row featured-event border event-padding">
-            <div class="col-lg-5 img-padding border">
+            <div class="col-lg-5 img-padding ">
                 <img src="../Theme1/image1a.png" class="img-fluid image" alt="...">
             </div>
             <div class="col show-border ">
                 <div class="row paddings mobile-ps" >
                     <div class="col-2 text-center date p-0 "  >
-                        <span class="font-day ">Sat</span>
+                        <span class="font-day ">Sat</span><br />
                         <label class="font-day2">24</label> 
                     </div>
-                    <div class="col-10 ms-4 pe-0  mobile-ps2 " >
+                    <div class="col-10 ml pe-0  mobile-ps2 " >
                         <div class="row ">
                             <div class="col bookmark">
                                 <i class="bi bi-bookmark-fill bookmark-color" ></i>
@@ -159,16 +159,16 @@
         </div>
         
         <div class="row non-featured-event border event-padding">
-            <div class="col-lg-5 img-padding border">
+            <div class="col-lg-5 img-padding ">
                 <img src="../Theme1/image1a.png" class="img-fluid image" alt="...">
             </div>
             <div class="col show-border ">
                 <div class="row paddings mobile-ps" >
                     <div class="col-2 text-center date p-0 "  >
-                        <span class="font-day ">Sun</span>
+                        <span class="font-day ">Sun</span><br />
                         <label class="font-day2">25</label> 
                     </div>
-                    <div class="col-10 ms-4 pe-0  mobile-ps2 " >
+                    <div class="col-10 ml pe-0  mobile-ps2 " >
                         <div class="row ">
                             <div class="col bookmark">
                                 <i class="bi bi-bookmark-fill bookmark-color" ></i>
@@ -181,7 +181,7 @@
                             <div class="col-1">
                                 <i class="bi bi-geo-alt bi-address" ></i>
                             </div>
-                            <div class="col">
+                            <div class="col ">
                                 <p class="add-margin"><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</p>
                             </div>
                         </div>
@@ -333,17 +333,19 @@
             object-fit: cover;
         }
         .img-padding{
-            background-color: #C4C4C4;
             margin: 0px;
             padding: 0px;
         }
         .paddings{
             padding-top: 35px;
             padding-bottom: 35px;
-            padding-left:30px;
+            /* padding-left:30px; */
         }
         .date{
-            width: 5%;
+            width: 10%;
+        }
+        .ml{
+            padding-left: 0%;
         }
         .font-day{
             text-align: center;
@@ -385,7 +387,11 @@
             /* line-height: 24px; */
         }
         .event-address .col-1 {
-            width: 4.333333%;
+            width: 43px;
+        }
+        .event-address .col {
+           padding-left: 0px;
+           margin-left: 0px;
         }
         .bi-address{
             margin-right: 20px ;
@@ -402,7 +408,7 @@
             color: #3F66AF;
         }
         .font-price{
-            margin-top: 35px;
+            margin-top: 30px;
             font-size: 18px;
             text-align: left;
             padding-left: 0px;
@@ -500,7 +506,7 @@
             .paddings{
                 padding-top: 21px !important;
                 padding-bottom: 20px !important;
-                padding-left:30px !important;
+                /* padding-left:30px !important; */
                 padding-right:0px !important;
             }
             .font-day{
@@ -513,7 +519,7 @@
                 font-size: 16px !important;
             }
             .font-price,.btn-margin{
-                margin-top: 32px !important;
+                margin-top: 20px !important;
             }
             .event-title{
                 margin-top: 17px !important;
@@ -629,6 +635,9 @@
                 overflow-y: hidden;
                 white-space: nowrap; 
             }
+            .event-address .col-1 {
+                width: 35px;
+            }
             .round-button {
                 padding: 9px 7px !important;
                 font-size: 15px !important;
@@ -694,7 +703,7 @@
                 margin-top: 0px !important;
             }
             .font-price{
-                margin-top: 18px !important;
+                margin-top: 10px !important;
             }
             .btn-margin{
                 margin-top: 20px !important;
