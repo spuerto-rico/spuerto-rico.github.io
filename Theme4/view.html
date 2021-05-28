@@ -13,14 +13,13 @@
   
   </head>
   <body>
-    
-    <div class="container-fluid event-padding adjust-padding ">
+    <div class="container-fluid event-padding adjust-padding">
         <div class="row-sm bookmark ">
           <i class="bi bi-bookmark-fill bookmark-color" ></i>
           <label class="label-1">Featured Events </label>
           <label class="label-2">April 24 Saturday @ 3pm - 5pm</label>
         </div>
-        <div class="row mt-4" > 
+        <div class="row mt-event" > 
             <div class="col d-flex align-items-center">
                 <h2 class="font-event label-3"> #AndroidDevChallenge: Try Jetpack Compose</h2> 
                 <div class="show-button"  >
@@ -28,34 +27,29 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4" >
+        <div class="row mt-add" >
             <div class="col d-flex align-items-center">
-                <div class="row label-add col-width">
-                    <div class=" col-1 label-4 address mb-0"><i class="bi bi-geo-alt bi-address" ></i></div>
-                    <div class=" col"><p class="label-4 "><b >Collorado</b> 24 The Shore Santa Monica, Denver IT Center</p></div>
+                <div class="row">
+                    <div class=" col-1 label-add label-4 mb-0"><i class="bi bi-geo-alt bi-address" ></i></div>
+                    <div class=" col"><p class="label-4 adjust-l4 "><b >Collorado</b> 24 The Shore Santa Monica, Denver IT Center</p></div>
                 </div>
             </div>
             <div class="col hide-button">
               <button type="button " class="btn signup-button text-nowrap" style="float: right;" >Sign Up Now</button>
             </div>
         </div>
-        <div class="row mt-3 d-flex jflex-row bd-highlight ">
+        <div class="row mt-price d-flex jflex-row bd-highlight ">
             <div class="col" >
-                <span class="font-price">
-                    <label class="space1"><b>Net Price : $350</b></label>
-                    <label class="divider1" >&nbsp;</label>
-                    <label class="space1 space2" >excl. 19.00% VAT corr. $66.50</label>
-                    <label class="divider2" >&nbsp;</label>
-                    <label class="space2">gross price $400</label>
+                <span >
+                    <label class="font-price"><b>Net Price : $350</b></label>
+                    <label class="ms-2 me-2" style="border-right: 1px solid lightgray">&nbsp;</label>
+                    <label class="font-vat">excl. 19.00% VAT corr. $66.50</label>
+                    <label class="ms-2 me-2 divider" s>&nbsp;</label>
+                    <label class="font-price">gross price $400</label>
                 </span>
             </div>
         </div>
-        <div class="row mt-4 hide-margin ">
-            <div class="col mobile-button ">
-                <button type="button " class="btn signup-button text-nowrap" >Sign Up Now</button>
-              </div>
-        </div>
-        <div class="row font-about  mt-5 "> 
+        <div class="row font-about  mt-about "> 
             <div class="col" >
                 <label ><b>About the Event</b></label>
             </div>
@@ -76,6 +70,8 @@
                     The app uses the concept 'toast' which makes the text appear for a short period and disappear, and 'random' which generates random numbers. 
                     The app is designed using Compose’s 'constraint-layout' which gives the flexibility to design the UI of the app efficiently.
                     <br/><br/>
+                    <img src="../Theme1/image7.png"  class="img-fluid image image-width" alt="...">
+                    <br/><br/>
                     Ask Me Anonymously is a chat application developed by GDSC Chandigarh University where users can ask questions to one another without revealing 
                     their identity. The application also uses Firebase Realtime Database and Firebase Cloud Storage for implementing the above-said functionality, 
                     it also uses some other notable Firebase features such as Cloud Messaging and Firebase Dynamic Links. The Google Developer Student Clubs Community 
@@ -90,45 +86,50 @@
                 <label class="font-related">Latest and Related Events</label>
             </div>
         </div>
-        <div class="row related-margin ">
-            <div class="col-sm-4 col-xs-12 sub-padding">
-                    <div class="row mt-3 "><label class="font-date">April 27 Wednesday @ 3pm - 5pm</label></div>
+        <div class="row ">
+            <div class="col-sm-4 col-xs-12">
+                <div class="container-fluid sub-padding">
+                    <div class="row mt-3 "><label class="font-date">April 25 Sunday @ 3pm - 5pm</label></div>
                     <div class="row m-top " ><label class="font-topic text-truncate"> Firebase Summit 2021 </label></div>
                     <div class="row m-top font-address">
                         <div class=" col-1 "><i class="bi bi-geo-alt bi-address" ></i></div>
-                        <div class=" col label-margin"><label class=" "><b >Supermart</b> 213 Center Mall Theatre</label></div>
+                        <div class=" col"><b class="label-margin ">Collorado</b> 24 The Shore Santa Monica, Denver IT Center</div>
                     </div>
-                    <div class="row md-top "> <p class="event-detail paragrah-wrap ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
-                            the world and is a call to action for accelerating genter equality. During March and April 2021...</p></div>
-                    <div class="row md-down"><b><a href="#" class="continue"  style="" >Continue Reading</a></b></div>
-            </div>
-            <div class="col-sm-4 col-xs-12 sub-padding">
-                <div class="row mt-3 "><label class="font-date">April 27 Wednesday @ 3pm - 5pm</label></div>
-                <div class="row m-top " ><label class="font-topic text-truncate"> Firebase Summit 2021 </label></div>
-                <div class="row m-top font-address">
-                    <div class=" col-1 "><i class="bi bi-geo-alt bi-address" ></i></div>
-                    <div class=" col label-margin"><label class=" "><b >Supermart</b> 213 Center Mall Theatre</label></div>
+                    <div class="row md-top"> <p class="event-detail ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                            the world and is a call to action for accelerating genter equality. During March and April 2021...<br/><b><a href="#" style="text-decoration: none;color: 3F66AF;" >Continue Reading</a></b></p></div>
                 </div>
-                <div class="row md-top  "> <p class="event-detail paragrah-wrap ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
-                        the world and is a call to action for accelerating genter equality. During March and April 2021...</p></div>
-                <div class="row md-down"><b><a href="#" class="continue"  style="" >Continue Reading</a></b></div>
             </div>
-            <div class="col-sm-4 col-xs-12 sub-padding">
-                <div class="row mt-3 "><label class="font-date">April 27 Wednesday @ 3pm - 5pm</label></div>
-                <div class="row m-top " ><label class="font-topic text-truncate"> Firebase Summit 2021 </label></div>
-                <div class="row m-top font-address">
-                    <div class=" col-1 "><i class="bi bi-geo-alt bi-address" ></i></div>
-                    <div class=" col label-margin"><label class=" "><b >Supermart</b> 213 Center Mall Theatre</label></div>
+            
+            <div class="col-sm-4 col-xs-12 ">
+                <div class="container-fluid sub-padding" >
+                    <div class="row mt-3 "><label class="font-date">April 25 Sunday @ 3pm - 5pm</label></div>
+                    <div class="row m-top " ><label class="font-topic text-truncate"> Flutter Engage </label></div>
+                    <div class="row m-top font-address">
+                        <div class=" col-1 "><i class="bi bi-geo-alt bi-address" ></i></div>
+                        <div class=" col"><b class="label-margin ">Collorado</b> 24 The Shore Santa Monica, Denver IT Center</div>
+                    </div>
+                    <div class="row md-top"> <p class="event-detail ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                            the world and is a call to action for accelerating genter equality. During March and April 2021...<br/><b><a href="#" style="text-decoration: none;color: 3F66AF;" >Continue Reading</a></b></p></div>
                 </div>
-                <div class="row md-top  "> <p class="event-detail paragrah-wrap ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
-                        the world and is a call to action for accelerating genter equality. During March and April 2021...</p></div>
-                <div class="row md-down"><b><a href="#" class="continue"  style="" >Continue Reading</a></b></div>
+            </div>
+            <div class="col-sm-4 col-xs-12 ">
+                <div class="container-fluid sub-padding">
+                    <div class="row mt-3 "><label class="font-date">April 25 Sunday @ 3pm - 5pm</label></div>
+                    <div class="row m-top " ><label class="font-topic text-truncate">International Women's Day 2021 </label></div>
+                    <div class="row m-top font-address">
+                        <div class=" col-1 "><i class="bi bi-geo-alt bi-address" ></i></div>
+                        <div class=" col"><b class="label-margin ">Collorado</b> 24 The Shore Santa Monica, Denver IT Center</div>
+                    </div>
+                    <div class="row md-top"> <p class="event-detail ">Internation Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
+                            the world and is a call to action for accelerating genter equality. During March and April 2021...<br/><b><a href="#" style="text-decoration: none;color: 3F66AF;" >Continue Reading</a></b></p></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid footer">
-        &nbsp;
-    </div>
+          
+      </div>
+      <div class="container-fluid footer">
+          &nbsp;
+      </div>
   
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -154,10 +155,13 @@
     .footer {
         margin-top: 50px;
     }
+    .page-padding{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .event-padding{
         padding-left: 8%;
         padding-right: 8%;
-        padding-bottom: 2%;
     }
     .related-padding{
         padding-left: 8%;
@@ -165,9 +169,10 @@
         background-color: #F9F9F9;
     }
     .related-margin{
-        margin-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         width: 97%;
-        flex-wrap: nowrap ;
+        flex-wrap: initial ;
     }
     .image-top{
         width: 100%;
@@ -202,21 +207,18 @@
         margin: 0px;
         font-weight: 700;
     }
-    .address {
-        width: 5.8%;
-    }
     .label-add, .font-detail{
         font-size: 24px;
     }
-    .col-width{
-        width: 100%;
+    .mt-price {
+       margin-top: 20px;
     }
     .font-detail{
         color: #555555;
     }
     .label-margin{
         margin-left: 0px ;
-        padding-left: 0px;
+        margin-inline-start: 0px;
     }
     .font-price{
         font-size: 28px;
@@ -241,54 +243,34 @@
     .font-address{
         font-size: 20px;
     }
-    .divider1,.divider2 {
+    .divider {
         border-right: 1px solid rgba(0,0,0,0.1);
     }
     .signup-button{
         background-color: #FF6633;
-        font-size: 24px;
+        font-size: medium;
         color: white;
         border: 1px solid #FF6633;
         padding: 17px 35px;
-        width: 238px;
-        height: 74px;
     }
-    .sub-padding{
-        margin: 10px;
-        border: 1px solid rgba(0,0,0,0.1);
+    .mt-about{
+        margin-top: 30px;
     }
-    .show-button,.mobile-button{
+    .show-button{
             display: none !important;
     }
     .m-top{
         margin-top: 15px;
     }
-    .md-top{
+    .md-top,.mt-event,.mt-add{
         margin-top: 20px;
     }
     .label-start{
          margin-left: 15px;   
     }
-    .continue{
-        text-decoration: none;
-        color: 3F66AF;
-    }
-    .md-down{
-        margin-bottom: 25px;
-    }
-    .paragrah-wrap {
-        width:100%;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        background:#fff;
-    }
-    .space1{
-        margin-right: 20px;
-    }
-    .space2{
-        margin-left: 20px;
+    .sub-padding{
+        margin-bottom: 10px;
+        border: 1px solid rgba(0,0,0,0.1);
     }
     @media (min-width: 768px) and (max-width: 1280px) {
         .bookmark {
@@ -319,6 +301,8 @@
             display: none !important;   
         }
         .signup-button {
+            /* font-size: 16px;
+            padding: 15px 20px; */
             font-size: 16px;
             padding: 15px 20px;
             width: 133px;
@@ -329,48 +313,21 @@
             margin-right: 0px !important;
             margin: 0px auto;
         }
-        .mobile-button{
-            display: none !important;
+        .m-top,.md-top, .mt-event, .mt-add{
+            margin-top: 10px !important;
         }
-        .m-top{
+        .mt-about{
+            margin-top: 30px !important;
+        }
+        .mt-price {
             margin-top: 15px !important;
-        }
-        .md-top{
-            margin-top: 15px !important;
-        }
-        .label-margin{
-            margin-left: 5px ;
-            padding-left: 5px;
-        }
-        .paragrah-wrap {
-            -webkit-line-clamp: 9;
         }
         .related-margin{
             width: 95% !important;
         }
-        .space1{
-            margin-right: 10px;
-        }
-        .space2{
-            margin-left: 10px;
-        }
-        .mt-5{
-            margin-top: 40px !important;
-        }
-        .hide-margin{
-            margin-top: 0px !important;
-        }
+        
     } 
     @media only screen and (max-width: 767px) {
-
-        .related-margin {
-            margin-top: 30px !important;
-            width: 100% !important;
-            flex-wrap: wrap !important;
-        }
-        .paragrah-wrap {
-            background-color: #F9F9F9;
-        }
         .bookmark {
             margin-top: 20px;
         }
@@ -382,9 +339,10 @@
             padding-left: 5%;
             padding-right: 5%;
         }
-        .label-add i { 
-            margin-top: 2px;
+        .label-add {
+            width: 27px;
         }
+        .label-add i { margin-top: 2px;}
         .font-date{
             font-size: 12px !important;
         }
@@ -400,12 +358,6 @@
         .font-price,.label-4,.font-vat,.font-detail,.font-address,.event-detail{
             font-size: 14px !important;
         }
-        .label-4{
-            margin-bottom: 0px !important;
-        }
-        .font-vat {
-            margin-left: 2px;
-        }
         .font-about{
             font-size: 18px !important;
         }
@@ -419,38 +371,21 @@
         .font-detail{
             margin-bottom: 15px !important;
         }
-        .hide-button,.show-button, .divider2{
+        .related-margin{
+            margin-top: 30px !important;
+            flex-wrap: wrap-reverse !important ;
+        }
+        .hide-button{
             display: none !important;
         }
-        .mobile-button{
-            display: block !important;
-        }
-        .signup-button{
-            width: 335px !important;
-            height: 49px !important;
-            font-size: 18px !important;
-            padding: 0px !important;
+        .show-button{
+            display: none !important;
         } 
-        .m-top{
-            margin-top: 17px !important;
-        }
-        .md-top{
+        .m-top,.md-top,.mt-price,.mt-event{
             margin-top: 10px !important;
         }
-        .mt-5{
-            margin-top: 30px !important;
-        }
-        .label-margin{
-            margin-left: 5px !important;
-        }
-        .paragrah-wrap {
-            -webkit-line-clamp: 6 !important;
-        }
-        .space1{
-            margin-right: 5px !important;
-        }
-        .space2{
-            margin-left: 5px !important;
+        .mt-about{
+            margin-top: 20px !important;
         }
     }
   </style>
