@@ -58,13 +58,15 @@
                     </div>
                 </div>
                 <div class="row p-margin d-flex jflex-row bd-highlight ">
-                    <span class="f-price d-flex align-items-center " >
-                        <label ><b>Net Price : $350</b></label>
-                        <label class="space2 divider" >&nbsp;</label>
-                        <label class="space2">excl. 19.00% VAT corr. $66.50</label>
-                        <label class="space1 space2 divider " >&nbsp;</label>
-                        <label class="space1" >gross price $400</label>
-                    </span>
+                    <div class="col d-flex align-items-center  ">
+                        <span class="f-price " >
+                            <label ><b>Net Price : $350</b></label>
+                            <label class="space2 divider" >&nbsp;</label>
+                            <label class="space2">excl. 19.00% VAT corr. $66.50</label>
+                            <label class="space1 space2 divider hide" >&nbsp;</label>
+                            <label class="space1" >gross price $400</label>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,56 +75,220 @@
         <div class="row d-padding">
             <div class="col ">
                 <div class="row r-width">
-                    <div class="col d-flex align-items-center ">
+                    <div class="col d-flex align-items-center mob-size">
                         <label class="f-note">The fields marked with (<span class="asterisk"> * </span>) are mandatory.</label>
                     </div>
-                    <div class="col d-flex flex-row-reverse ">
-                        <label class="f-pdata"><b>Add New Participant</b></label>
+                    <div class="col d-flex flex-row-reverse hide">
+                        <label class="f-pdata "><b>Add New Participant</b></label>
                     </div>
                 </div>
 
-                <div class="row r-width f-top ">
-                    <div class="col-5">
+                <div class="row r-width f-top d-flex jflex-row ">
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
                         <label class="f-size mb-2" id="basic-addon1">Surname<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control " placeholder="" aria-label="Surname" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
                         <label class="f-size mb-2" id="basic-addon1">Firstname<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control" placeholder="" aria-label="Firstname" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-sm-4 col-xs-12 flex-column salutation">
                         <label class="f-size mb-2" id="basic-addon1">Salutation<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <select class="form-select" id="inputGroupSelect01">
-                              <option selected>Mrs</option>
-                              <option value="1">Mr</option>
-                              <option value="2">Ms</option>
-                              <option value="3">Dr</option>
+                            <option selected>Mrs</option>
+                            <option value="1">Mr</option>
+                            <option value="2">Ms</option>
+                            <option value="3">Dr</option>
                             </select>
-                          </div>
+                        </div>
                     </div>
                 </div>
            
-                <div class="row r-width n-top">
-                    <div class="col-6">
+                <div class="row r-width n-top mb-1 d-flex jflex-row">
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
                         <label class="f-size mb-2" id="basic-addon1">Email<span class="asterisk"> * </span></label>
                         <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray" id="basic-addon1">E-mail address for communication</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Telephone</label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="Telephone" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                
+                <hr></hr>
+
+                <div class="row r-width nx-top d-flex jflex-row ">
+                    <div class="col flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Company / Authority / Institute<span class="asterisk"> * </span></label>
+                        <div class="input-group  mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Company" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray" id="basic-addon1">Name of the company / authority / institute for which the order is made.</label>
+                    </div>
+                </div>
+                <div class="row r-width nx-top d-flex jflex-row place">
+                    <div class="col-lg-6 col-sm-4  col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Place<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Place" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4  col-sx-12 flex-column location">
+                        <label class="f-size mb-2" id="basic-addon1">Location<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="Location" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row r-width n-top">
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column street">
+                        <label class="f-size mb-2" id="basic-addon1">Street and House Number<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Street" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 col-sm-6 col-sx-12 flex-column country">
+                        <label class="f-size mb-2" id="basic-addon1">Country<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Germany</option>
+                            <option value="1">Philippines</option>
+                            <option value="2">Thailand</option>
+                            <option value="3">US</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <hr></hr>
+
+                <div class="row r-width f-top d-flex jflex-row ">
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Prefer Food</label>
+                        <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Food" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Member ID </label>
+                        <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="ID" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-xs-12 flex-column age">
+                        <label class="f-size mb-2" id="basic-addon1">Age</label>
+                        <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="Age" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I would like to give a different billing address</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid t-size m-top ">
+        <div class="row d-padding">
+            <div class="col ">
+                <div class="row r-width">
+                    <div class="col d-flex align-items-center mob-size">
+                        <label class="f-invoice">Invoices</label>
+                    </div>
+                </div>
+                <div class="row r-width">
+                    <div class="col mob-size">
+                        <label class="f-Inote">Here you can specify a different invoice <address></address></label>
+                    </div>
+                </div>
+                <div class="row r-width f-top d-flex jflex-row ">
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Surname<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control " placeholder="" aria-label="Surname" aria-describedby="basic-addon1">
                         </div>
-                        <label class="f-email" id="basic-addon1">E-mail address for communication</label>
                     </div>
-                    <div class="col-6">
-                        <label class="f-size mb-2" id="basic-addon1">Telephone</label>
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Firstname<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control" placeholder="" aria-label="Firstname" aria-describedby="basic-addon1">
                         </div>
                     </div>
+                    <div class="col-lg-2 col-sm-4 col-xs-12 flex-column salutation">
+                        <label class="f-size mb-2" id="basic-addon1">Salutation<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Mrs</option>
+                            <option value="1">Mr</option>
+                            <option value="2">Ms</option>
+                            <option value="3">Dr</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <hr></hr>
+           
+                <div class="row r-width nx-top d-flex jflex-row ">
+                    <div class="col flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Company / Authority / Institute<span class="asterisk"> * </span></label>
+                        <div class="input-group  mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Company" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray" id="basic-addon1">Name of the company / authority / institute for which the order is made.</label>
+                    </div>
+                </div>  
+                <div class="row r-width nx-top d-flex jflex-row">
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Email<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray" id="basic-addon1">E-mail address for invoicing</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
+                        <label class="f-size mb-2 " id="basic-addon1">City <span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="City" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row r-width nx-top d-flex jflex-row place">
+                    <div class="col-lg-5 col-sm-4  col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Street and House Number<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Street" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-4 col-sm-6 col-sx-12 flex-column country">
+                        <label class="f-size mb-2" id="basic-addon1">Country<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Germany</option>
+                            <option value="1">Philippines</option>
+                            <option value="2">Thailand</option>
+                            <option value="3">US</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-sx-12 flex-column street">
+                        <label class="f-size mb-2" id="basic-addon1">Postal Code<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Postal" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -226,21 +392,25 @@
         .edit-button{
             color: #FFFFFF;
         }
-        .f-add{
-            font-size: 20px;
-        }
         .f-price{
             font-size: 26px;
         }
-        .f-note,.f-size{
+        .f-note,.f-size,.f-add{
             font-size: 20px;
             font-weight: 600;
+        }
+        .f-invoice{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .f-Inote{
+            font-size: 18px;
         }
         .f-pdata{
             font-size: 22px;
             color: #FF6633;
         }
-        .f-email{
+        .f-gray{
             color: #888888;
             font-size: 16px;
         }
@@ -279,6 +449,9 @@
         .n-top{
             margin-top: 0%;
         }
+        .nx-top{
+            margin-top: 1%;
+        }
         .edit-button{
             width: 195px;
             height: 74px;
@@ -309,6 +482,13 @@
         }
         .ig-size{
             width:100%;
+        }
+        .form-check-label{
+            font-size: 18px;
+        }
+        .form-control{
+            background: #F2F2F2;
+            border-radius: 5px;
         }
         @media (min-width: 992px) and (max-width: 1600px) {
         .f-step{
@@ -396,16 +576,32 @@
            width: 70% !important;
         }
         .icon-width{
-            width: 8% !important;
+            width: 10% !important;
         }
         .margin-top {
             margin-top: 4% !important;
         }
         .f-step{
-            font-size: 12px !important;
+            font-size: 10px !important;
+        }
+        .t-size{
+            width: 91% !important;
+            margin-top: 3.5% !important;
+        }
+        .e-margin {
+            margin-top: 2% !important;
+        }
+        .d-padding {
+            padding-left: 2% !important; 
+            padding-right: 2% !important;
+            padding-top: 4% !important;
+            padding-bottom: 4% !important;
         }
         .t-padding{
-            width: 86% !important;
+            width: 90% !important;
+        }
+        .t-padding .col{
+            padding: 0% !important;
         }
         .f-note,.f-size{
             font-size: 12px !important;
@@ -418,6 +614,27 @@
         }
         .f-event{
             font-size: 22px !important;
+        }
+        .f-address{
+            padding: 0% !important;
+        }
+        .hide{
+            display: none !important;
+        }
+        .mob-size{
+            width: 100% !important;
+        }
+        .salutation .ig-size{
+            width: 50% !important;
+        }
+        .place .ig-size, .location .ig-size,.street .ig-size,.country .ig-size{
+            width: 100% !important;
+        }
+        .space1{
+            margin-right: 5px;
+        }
+        .space2{
+            margin-left: 5px ;
         }
         }
 
