@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <title>Registration</title>
+    <title>Participants Data</title>
   </head>
   <body>
     <div class="container-fluid image-setting">
@@ -68,6 +68,60 @@
                         </span>
                     </div>
                 </div>
+                <div class="row sm-margin d-flex jflex-row bd-highlight hide-tablet">
+                    <div class="col ">
+                        <button type="button" class="btn showMore-button text-nowrap " data-bs-toggle="modal" data-bs-target="#exampleModal">Show More Events</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-xl modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Included Events</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <table class="table table-bordered table-responsive-lg table-responsive-xl table-responsive-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">End Date</th>
+                            <th scope="col">Event Name</th>
+                            <th scope="col">Location</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05.25.2021, 09:00</td>
+                            <td>26.05.2021, 09:00</td>
+                            <td>Android Event</td>
+                            <td>Colorado 24 The Shore Santa Monica, Denver IT Center</td>
+                          </tr>
+                          <tr>
+                            <td>05.25.2021, 09:00</td>
+                            <td>26.05.2021, 09:00</td>
+                            <td>HTML Event</td>
+                            <td>Zoom Event</td>
+                          </tr>
+                          <tr>
+                            <td>05.25.2021, 09:00</td>
+                            <td>26.05.2021, 09:00</td>
+                            <td>Optional Transition Core</td>
+                            <td>Colorado 24 The Shore Santa Monica, Denver IT Center</td>
+                          </tr>
+                          <tr>
+                            <td>05.25.2021, 09:00</td>
+                            <td>26.05.2021, 09:00</td>
+                            <td>Optional Transition Core</td>
+                            <td>Colorado 24 The Shore Santa Monica, Denver IT Center</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
             </div>
         </div>
     </div>
@@ -108,26 +162,8 @@
                         </div>
                     </div>
                 </div>
-           
-                <div class="row r-width n-top mb-1 d-flex jflex-row">
-                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
-                        <label class="f-size mb-2" id="basic-addon1">Email<span class="asterisk"> * </span></label>
-                        <div class="input-group mb-0 ig-size">
-                            <input type="text" class="form-control " placeholder="" aria-label="Email" aria-describedby="basic-addon1">
-                        </div>
-                        <label class="f-gray" id="basic-addon1">E-mail address for communication</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
-                        <label class="f-size mb-2" id="basic-addon1">Telephone</label>
-                        <div class="input-group mb-3 ig-size">
-                            <input type="text" class="form-control" placeholder="" aria-label="Telephone" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                </div>
-                
-                <hr></hr>
-
-                <div class="row r-width nx-top d-flex jflex-row ">
+           <!-- show in tablet -->
+                <div class="row r-width nx-top d-flex jflex-row show-tablet">
                     <div class="col flex-column">
                         <label class="f-size mb-2" id="basic-addon1">Company / Authority / Institute<span class="asterisk"> * </span></label>
                         <div class="input-group  mb-0 ig-size">
@@ -136,6 +172,35 @@
                         <label class="f-gray" id="basic-addon1">Name of the company / authority / institute for which the order is made.</label>
                     </div>
                 </div>
+           <!-- ---------- -->
+                <div class="row r-width n-top mb-1 d-flex jflex-row email">
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Email<span class="asterisk"> * </span></label>
+                        <div class="input-group mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray e-span" id="basic-addon1">E-mail address for communication</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Telephone</label>
+                        <div class="input-group mb-3 ig-size">
+                            <input type="text" class="form-control" placeholder="" aria-label="Telephone" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+            <!-- hide in tablet -->
+                <hr class="hide-tablet"></hr>
+
+                <div class="row r-width nx-top d-flex jflex-row hide-tablet">
+                    <div class="col flex-column">
+                        <label class="f-size mb-2" id="basic-addon1">Company / Authority / Institute<span class="asterisk"> * </span></label>
+                        <div class="input-group  mb-0 ig-size">
+                            <input type="text" class="form-control " placeholder="" aria-label="Company" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="f-gray" id="basic-addon1">Name of the company / authority / institute for which the order is made.</label>
+                    </div>
+                </div>
+            <!-- ----------- -->
                 <div class="row r-width nx-top d-flex jflex-row place">
                     <div class="col-lg-6 col-sm-4  col-sx-12 flex-column">
                         <label class="f-size mb-2" id="basic-addon1">Place<span class="asterisk"> * </span></label>
@@ -150,14 +215,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row r-width n-top">
-                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column street">
+                <div class="row r-width n-top ">
+                    <div class="col-lg-6 col-sm-4 col-sx-12 flex-column street street-tablet">
                         <label class="f-size mb-2" id="basic-addon1">Street and House Number<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control " placeholder="" aria-label="Street" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-4 col-sm-6 col-sx-12 flex-column country">
+                    
+                    <div class="col-lg-6 col-sm-4 col-sm-6 col-sx-12 flex-column country hide-tablet">
                         <label class="f-size mb-2" id="basic-addon1">Country<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <select class="form-select" id="inputGroupSelect01">
@@ -169,11 +235,29 @@
                         </div>
                     </div>
                 </div>
+                
+ <!-- Show in tablet -->
+                <div class="row r-width n-top show-tablet landmark">
+                    <div class="col-lg-5 col-sm-4 col-sm-6 col-sx-12 flex-column landmark-tablet">
+                        <label class="f-size mb-2" id="basic-addon1">Landmark<span class="asterisk"> * </span></label>
+                        <div class="input-group ig-size">
+                            <select class="form-select" id="inputGroupSelect01">
+                            <option selected>..</option>
+                            <option value="1">...</option>
+                            <option value="2">..</option>
+                            <option value="3">...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+<!-- --------- -->
 
-                <hr></hr>
 
-                <div class="row r-width f-top d-flex jflex-row ">
-                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column">
+<!-- hide in tablet -->
+                <hr class="hide-tablet"></hr>
+
+                <div class="row r-width f-top d-flex jflex-row hide-tablet">
+                    <div class="col-lg-5 col-sm-4 col-xs-12 flex-column ">
                         <label class="f-size mb-2" id="basic-addon1">Prefer Food</label>
                         <div class="input-group mb-0 ig-size">
                             <input type="text" class="form-control " placeholder="" aria-label="Food" aria-describedby="basic-addon1">
@@ -191,6 +275,16 @@
                             <input type="text" class="form-control" placeholder="" aria-label="Age" aria-describedby="basic-addon1">
                         </div>
                     </div>
+                    <div class="input-group nx-top mb-3 show-desktop">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I would like to give a different billing address</label>
+                        </div>
+                    </div>
+                </div>
+<!-- --- -->
+<!-- show in tablet -->
+                <div class="row r-width nx-top d-flex jflex-row show-tablet ">
                     <div class="input-group mb-3">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -198,10 +292,12 @@
                         </div>
                     </div>
                 </div>
+<!-- --- -->
             </div>
         </div>
     </div>
-    <div class="container-fluid t-size m-top ">
+<!-- hide in tablet -->
+    <div class="container-fluid t-size m-top hide-tablet">
         <div class="row d-padding">
             <div class="col ">
                 <div class="row r-width">
@@ -271,7 +367,8 @@
                             <input type="text" class="form-control " placeholder="" aria-label="Street" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-sm-4 col-sm-6 col-sx-12 flex-column country">
+                   
+                    <div class="col-lg-5 col-sm-4 col-sm-6 col-sx-12 flex-column country ">
                         <label class="f-size mb-2" id="basic-addon1">Country<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <select class="form-select" id="inputGroupSelect01">
@@ -282,7 +379,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-4 col-sx-12 flex-column street">
+                    <div class="col-lg-2 col-sm-4 col-sx-12 flex-column street ">
                         <label class="f-size mb-2" id="basic-addon1">Postal Code<span class="asterisk"> * </span></label>
                         <div class="input-group mb-3 ig-size">
                             <input type="text" class="form-control " placeholder="" aria-label="Postal" aria-describedby="basic-addon1">
@@ -294,11 +391,11 @@
     </div>
     <div class="container-fluid t-size">
         <div class="row margin-top ">
-            <div class="col pe-0 ">
+            <div class="col p-0 m-0">
                 <button type="button" class="btn back-button text-nowrap ">Back</button>
             </div>
-            <div class="col ps-0">
-                <button type="button" class="btn confirm-button text-nowrap ">Confirm Order</button>
+            <div class="col p-0 m-0">
+                <button type="button" class="btn save-button text-nowrap ">Save and Continue</button>
             </div>
         </div>
     </div>
@@ -311,7 +408,10 @@
     }
     body {
         font-family: 'Product Sans';
-    }
+        }
+        .hide-desktop{
+            display: none !important;
+        }
         .border-black-decor , .border{ 
             border: 1px solid rgba(0,0,0,0.1);
         }
@@ -420,6 +520,9 @@
         .p-margin{
             margin-top: 1.5%;
         }
+        .sm-margin{
+            margin-top: 2%;
+        }
         .r-width{
             width: 100%;
         }
@@ -436,7 +539,7 @@
         .i-width{
             width: 37px;
         }
-        .back-button,.confirm-button{
+        .back-button,.save-button,.showMore-button{
             font-size: 20px;
         }
         .t-size{
@@ -466,12 +569,20 @@
             box-sizing: border-box;
             border-radius: 5px;
         }
-        .confirm-button{
+        .save-button{
             width: 231px;
             height: 60px;
             background: #FF6633;
             border-radius: 5px;
             float: right;
+            color:#FFFFFF;
+        }
+        .showMore-button{
+            width: 231px;
+            height: 60px;
+            background: #FF6633;
+            border-radius: 5px;
+            float: left;
             color:#FFFFFF;
         }
         .asterisk{
@@ -489,6 +600,15 @@
         .form-control{
             background: #F2F2F2;
             border-radius: 5px;
+        }
+        .table .th {
+            width: 10%,
+        }
+        .show-tablet{
+            display: none !important;
+        }
+        .show-desktop{
+            display: block !important;
         }
         @media (min-width: 992px) and (max-width: 1600px) {
         .f-step{
@@ -528,6 +648,23 @@
         .f-price{
             font-size: 22px !important;
         }
+        .save-button,.showMore-button{
+            width: 200px !important;
+            height: 54px !important;
+            font-size: 18px !important;
+        }
+        .back-button{
+            width: 87px !important;
+            height: 54px !important;
+            font-size: 18px !important;
+        }
+        .show-tablet,.show-desktop{
+            display: none !important;
+        }
+        .show-desktop{
+            display: block !important;
+        }
+        
         }
         @media (min-width: 768px) and (max-width: 991px) {
         .f-step{
@@ -558,6 +695,31 @@
         .f-event{
             font-size: 24px !important;
         }
+        .hide-tablet{
+            display: none !important;
+        }
+        .save-button{
+            width: 170px !important;
+            height: 44px !important;
+            font-size: 15px !important;
+        }
+        .back-button{
+            width: 67px !important;
+            height: 44px !important;
+            font-size: 15px !important;
+        }
+        .show-tablet{
+            display: block !important;
+        }
+        .street-tablet,.landmark-tablet{
+            width: 100% !important;
+        }
+        .place .col-sm-4,.email .col-sm-4{
+            width: 50% !important;
+        }
+        .form-check-label{
+            font-size: 15px;
+        }
         }
         @media only screen and (max-width: 411px) {
         .s-padding{
@@ -569,7 +731,12 @@
         .margin-top {
             margin-top: 4% !important;
         }
-
+        .hide-tablet{
+            display: none !important;
+        }
+        .place .col-sm-4,.email .col-sm-4{
+            width: 50% !important;
+        }
         }  
         @media only screen and (max-width: 767px) {
         .s-padding{
@@ -636,6 +803,32 @@
         .space2{
             margin-left: 5px ;
         }
+        .hide-tablet{
+            display: none !important;
+        }
+        .save-button{
+            width: 150px !important;
+            height: 40px !important;
+            font-size: 13px !important;
+        }
+        .back-button{
+            width: 70px !important;
+            height: 40px !important;
+            font-size: 13px !important;
+        }
+        .show-desktop{
+            display: none !important;
+        }
+        .show-tablet{
+            display: block !important;
+        }
+        .landmark .col-sm-6{
+            width: 100% !important;
+        }
+        .form-check-label{
+            font-size: 13px;
+        }
+        
         }
 
         
