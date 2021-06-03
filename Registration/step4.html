@@ -8,46 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <title>Confirmation</title>
+    <title>Congratulations</title>
   </head>
   <body>
     <div class="container-fluid image-setting">
         <img src="../Theme1/image8.png"  class="img-fluid  " alt="...">
     </div>
-    <div class="container-fluid s-padding ">
-        <div class="row margin-top d-flex align-items-center">
-            <div class="col-1 d-flex flex-row-reverse p-0 icon-width" >
-                <img src="images/ParticipantData.png"  class="img-fluid icon-hw" alt="..."> 
+    <div class="container-fluid img-setting ">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <img src="./images/congrats.png"  class="img-fluid  " alt="...">
+                <label class="f-thank text-center">Thank you for Signing up</label>
+                <label class="f-email text-center">We have emailed you a booking confirmation at <a  href="#" class="stretched-link">obteves@gmail.com</a></label>
             </div>
-            <div class="col redline"></div>
-            <div class="col-1 d-flex flex-row-reverse p-0 icon-width">
-                <img src="images/NoPayment.png"  class="img-fluid icon-hw" alt="...">  
-            </div>
-            <div class="col line"></div>
-            <div class="col-1 d-flex flex-row-reverse p-0 icon-width">
-                <img src="images/confirmation.png"  class="img-fluid icon-hw" alt="..."> 
-            </div>          
         </div>
     </div>
-    <div class="container-fluid t-padding ">
-        <div class="row margin2-top d-flex align-items-center">
-            <div class="col-3 text-center p-0">
-                <span class="f-step">1. Participant Data</span>  
-            </div>
-            <div class="col ">&nbsp;</div>
-            <div class="col-3 text-center np-width p-0">
-                <span class="f-step" >2. No Payment</span>
-            </div>
-            <div class="col ">&nbsp;</div>
-            <div class="col-3 text-center p-0  ">
-                <span class="f-step">3. Confirmation</span> 
-            </div>          
-        </div>
-    </div>
-    <div class="container-fluid cd-padding ">
-        <label class="check-label">Check Data</label><br />
-        <label class="f-confirm">Please check the details you have entered before confirming your order.</label>
-    </div>
+    
     <div class="container-fluid t-size">
         <div class="row margin-top d-flex align-items-center d-padding ">
             <div class="col ">
@@ -337,7 +313,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid t-size m-top">
+    <div class="container-fluid cd-padding ">
+        <label class="check-label">Contact Us</label><br />
+        <label class="f-confirm">If you have any questions, please contact <a href="#" class="stretched-link">info@gisa-marburg.de</a>.</label>
+    </div>
+    <!-- <div class="container-fluid t-size m-top">
         <div class="row  ">
             <div class="col p-0 m-0">
                 <button type="button" class="btn back-button text-nowrap ">Back</button>
@@ -346,7 +326,7 @@
                 <button type="button" class="btn confirm-button text-nowrap ">Confirm Order</button>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container-fluid footer">
         &nbsp;
     </div>
@@ -374,52 +354,24 @@
             padding-right: 0%;
             width: 100%;
         }
+        .img-setting{
+            width: 46%;
+        }
+        .img-setting .col{
+            flex-direction: column;
+        }
         .margin-top{
             margin-top: 3%;
         }
-        .margin2-top{
-            margin-top: 10px;
-        }
-        .c-padding{
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-        .line{
-            border-top:  2px solid #D9D9D9;
-        }
-        .redline{
-            border-top: 2px solid #FF6633;
-        }
-        .w-pad{
-            width: 62px;
-            padding-left: 0%;
-            padding-right: 0%;
-        }
-        .s-padding{
-           padding: 0px;
-            width: 60%;
-        }
-        .icon-hw{
-            width: 100%;
-            height: 100%;
-        }
-        .icon-width{
-            width: 6%;
-        }
-        .t-padding{
-            padding: 0%;
-            width: 76%;
-        }
-        .np-width{
-            width: 170px;
-        }
-        .f-step{
-            font-size: 20px;
-        }
-        .inactive{
-            color: #A4A4A4 ;
-        }
         /* ------------------------------------------------------ */
+        .f-thank{
+            font-size: 40px;
+            font-weight: 600;
+            color: #FF6633;
+        }
+        .f-email{
+            font-size: 21px;
+        }
         .d-padding{
             padding: 3%;
             border: 1px solid rgba(0, 0, 0, 0.15);
@@ -428,6 +380,7 @@
         .cd-padding{
             width: 80%;
             margin-top: 2%;
+            padding-left: 0px;
         }
         .f-confirm{
             font-size: 22px;
@@ -453,14 +406,6 @@
         }
         .f-price{
             font-size: 26px;
-        }
-        .f-invoice{
-            font-size: 24px;
-            font-weight: 600;
-        }
-        .f-gray{
-            color: #888888;
-            font-size: 16px;
         }
         .e-margin{
             margin-top: 1%;
@@ -537,10 +482,6 @@
             float: left;
             color:#FFFFFF;
         }
-        .form-control{
-            background: #F2F2F2;
-            border-radius: 5px;
-        }
         .table .th {
             width: 10%,
         }
@@ -556,23 +497,8 @@
             font-size: 16px;
         }
         @media (min-width: 992px) and (max-width: 1600px) {
-            .f-step{
-                font-size: 18px !important;
-            }
-            .w-pad {
-                width: 50px !important;
-            }
             .margin-top {
                 margin-top: 2% !important;
-            }
-            .s-padding{
-            width: 62% !important;
-            }
-            .icon-width{
-                width: 7% !important;
-            }
-            .t-padding{
-                width: 77%;
             }
             /* ----------------------------- */
             .f-confirm {
@@ -606,24 +532,9 @@
         
         }
         @media (min-width: 768px) and (max-width: 991px) {
-            .f-step{
-                font-size: 16px !important;
-            }
-            .w-pad {
-                width: 50px !important;
-            }
             .margin-top {
                 margin-top: 5% !important;
             }
-            .s-padding{
-            width: 56% !important;
-            }
-            .icon-width{
-                width: 9% !important;
-            }
-            .t-padding {
-                width: 67%;
-            }   
             /* ------------------------ */
             .f-date,.f-address,.f-price{
                 font-size: 16px !important;
@@ -637,9 +548,6 @@
             .title {
                 font-size: 18px !important;
             }
-            .cd-padding{
-                display: none !important;
-            }
             .hide-tablet{
                 display: none !important;
             }
@@ -650,9 +558,6 @@
             }
             .show-tablet{
                 display: block !important;
-            }
-            .street-tablet,.landmark-tablet{
-                width: 100% !important;
             }
             .f-address{
                 padding-left: 0% !important;
@@ -667,17 +572,8 @@
             }
         }
         @media (min-width: 576px) and (max-width: 767px) {
-            .s-padding{
-                width: 70% !important;
-            }
-            .icon-width{
-                width: 9% !important;
-            }
             .margin-top {
                 margin-top: 4% !important;
-            }
-            .f-step{
-                font-size: 10px !important;
             }
             .t-size{
                 width: 90% !important;
@@ -691,12 +587,6 @@
                 padding-right: 2% !important;
                 padding-top: 4% !important;
                 padding-bottom: 4% !important;
-            }
-            .t-padding{
-                width: 85% !important;
-            }
-            .t-padding .col{
-                padding: 0% !important;
             }
             .f-date{
                 font-size: 13px !important;
@@ -731,22 +621,10 @@
                 width: 40% !important;
                 height: 50px !important;
             }
-            .cd-padding{
-                display: none !important;
-            }
         }
         @media only screen and (max-width: 575px) {
-            .s-padding{
-                width: 70% !important;
-            }
-            .icon-width{
-                width: 10% !important;
-            }
             .margin-top {
                 margin-top: 4% !important;
-            }
-            .f-step{
-                font-size: 10px !important;
             }
             .t-size{
                 width: 91% !important;
@@ -759,12 +637,6 @@
             .d-padding {
                 padding-left: 1% !important;
                 padding-right: 1% !important;
-            }
-            .t-padding{
-                width: 90% !important;
-            }
-            .t-padding .col{
-                padding: 0% !important;
             }
             .f-date{
                 font-size: 13px !important;
@@ -784,7 +656,7 @@
             .space2{
                 margin-left: 5px ;
             }
-            .hide,.hide-tablet,.cd-padding,.h-mobile{
+            .hide,.hide-tablet,.h-mobile{
                 display: none !important;
             }
             .sh-mobile{

@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <title>Theme 1</title>
+    
+  </head>
+  <body>
+    <div class="container-fluid page-padding border-black-decor">
+        <div class="row border mt-5 mb-4 pt-1 pb-1 ">
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border search">
+                <div class="input-group input-group-sm  input-group-lg divider remove-divider">
+                    <span class="input-group-text border-0 background-color" ><i class="bi bi-search "></i></span>
+                    <input type="text" class="form-control border-0 lpad " placeholder="Search for Events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border search">
+                <div class="input-group input-group-sm input-group-lg  ">
+                    <span class="input-group-text border-0 background-color" ><i class="bi bi-geo-alt"></i></span>
+                    <input type="text" class="form-control border-0 " placeholder="In a Location" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 f-search p-0">
+                <div class="row size" >
+                    <div class="col-xs-12 col-sm-4 col-lg-5 d-flex align-items-center hide-mobile f-pad "> 
+                        <button type="button" class="btn btn-lg btn-sm find-button text-nowrap " >Find Events</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-5 d-flex align-items-center filter ">
+                        <div class="input-group input-group-sm input-group-lg flex-nowrap "   >
+                            <span class="input-group-text border-0 show-filter i-filter"><i class="bi bi-sliders"></i></span>
+                            <span class="input-group-text border-0 show-filter1"> Show Filters</span>
+                        </div>  
+                        <div class="divider">&nbsp;</div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-2 d-flex align-items-center d-size " >
+                        <div class="dropdown "  >
+                            <button class="btn dropdown-toggle list" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b> List</b>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-12  hide-desktop align-items-center show-mobile mobile-mt-3"> 
+                        <button type="button" class="btn btn-lg btn-sm find-button text-nowrap " >Find Events</button>
+                    </div>
+                </div>
+             </div>    
+        </div>
+        <div class="row mb-4 events " >
+            <div class="col p-0 ">
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Virtual Events</a> 
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Featured Events</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Event Category</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2"  >Organizers</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Tags</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Day</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Time</a>
+                <a href="#" class="btn font-nav btn-light text-nowrap round-button me-2 mb-2" >Cost($)</a> 
+            </div>
+        </div>
+        
+        <div class="row mb-4 space3">   
+            <div class="col p-0">
+                <table class="width-now" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td> <span class="name label-Now" >Now </span> </td>
+                        <td> <span class="name label-Now" >-</span> </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="btn dropdown-button dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                    April 23
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">April 24</a></li>
+                                    <li><a class="dropdown-item" href="#">April 25</a></li>
+                                    <li><a class="dropdown-item" href="#">April 26</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mb-4 space3">
+            <div class="col-12 p-0">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="td-width"> <span class="font-date" >April 2021 </span> </td>
+                        <td ><div class="line">&nbsp;</div> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black !important;
+        opacity: 1; /* Firefox */
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: black  !important;
+        }
+        ::-ms-input-placeholder { /* Microsoft Edge */
+        color: black !important;
+        }
+        .border-black-decor , .border { 
+            border: 0px solid rgba(0,0,0,0.1);
+        }
+        .input-group-lg  i {
+            padding-left: 10px;
+        }
+        .input-group-lg  i, .input-group-lg input {
+            font-size: 18px !important;
+        }
+        .input-group-lg span {
+            font-size: 18px !important;
+        }
+        .bi-sliders,.show-filter,.show-filter1,.background-color{
+            background-color:transparent ;    
+        }
+        .line{
+            border-top: 1px solid  rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .page-padding {
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .find-button {
+            width: 180px;
+            height: 50px;
+            background: #FF6633;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+        }
+        .round-button{
+            border-radius: 25px; 
+            background-color: #f4f4f4;  
+            font-size:18px !important;
+            color:  #130f26;
+            word-wrap: break-word;
+            padding: 15px 25px;
+        }
+        .dropdown-button {
+            background-color: none;
+            font-size: 30px;
+            font-weight:bold;
+            padding: 0px 0px 0px 5px;
+        }
+        .label-Now{
+            font-size: 30px; 
+        }
+        .font-date{
+            font-size: 20px;
+            width: 100px;
+        }
+        .td-width{
+            width: 100px;
+        }
+        .font-nav{
+            font-size: 15px;
+            font-stretch: condensed;
+        }
+        .width-now{
+            width: 200px;
+        }
+        .divider {
+            border-right: 1px solid lightgray;
+        }
+        .listdivider {
+            border-left: 1px solid lightgray;
+        }
+        .hide-desktop {
+            display: none;
+        }
+        textarea:hover, 
+        input:hover, 
+        textarea:active, 
+        input:active, 
+        textarea:focus, 
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active
+        {
+            outline:0px !important;
+            -webkit-appearance:none;
+            box-shadow: none !important;
+        }
+        .size{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        .filter{
+            margin-left: 0px;
+            padding: 0px;
+            width: 37%;
+        }
+        .d-size{
+            width: 21%;
+            padding-left: 3%;
+        }
+        .dropdown {
+                width: 100%;
+        }
+        .search{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .col-lg-7  {
+            padding-right: 115px ;
+        }
+        @media (min-width: 992px) and (max-width: 1600px) {
+            .find-button {
+                width: 150px;
+                height: 40px;
+                font-size: 15px;
+            }
+            .list{
+                font-size: 14px !important;
+            }
+            .input-group-lg  i {
+                padding-left: 2px;
+            }
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span {
+                font-size: 15px !important;
+            }
+            .search {
+                width: 30% ;
+            }
+            .f-search{
+                width: 40%;
+            }
+            .font-date{
+                font-size: 18px !important;
+            }
+            .label-Now{
+                font-size: 22px !important;
+            }
+            .dropdown-button{
+                font-size: 22px !important;
+                font-weight: bold;
+            }
+            .round-button {
+                padding: 10px 18px !important;
+                font-size: 15px !important;
+            }
+            .col-lg-7  {
+                padding: 0px !important;
+            }
+            .f-search .f-pad{
+                padding: 0px !important;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .input-group-lg  i {
+                padding-left: 2px;
+            }
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span, .list {
+                font-size: 13px !important;
+            }
+            .find-button {
+                width: 150px;
+                height: 40px;
+                font-size: 15px;
+            }
+            .search {
+                width: 30% !important;
+            }
+            .f-search{
+                width: 40% !important;
+            }
+            .f-search .f-pad,.show-filter1{
+                padding: 0px !important;
+            }
+            .round-button {
+                padding: 10px 18px !important;
+                font-size: 15px !important;
+            }
+            .label-Now,.dropdown-button {
+            font-size: 22px !important;
+            }
+            .font-date{
+                font-size: 18px !important;
+            }
+            .mb-4 {
+                margin-bottom: 1.4rem !important;
+            }
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            .input-group-lg  i {
+                padding-left: 1px !important;
+            }
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span, .list {
+                font-size: 12px !important;
+            }
+            .find-button {
+                width: 130px !important;
+                height: 30px !important;
+                font-size: 13px !important;
+            }
+            .filter{
+                width: 40% !important;
+            }
+            .show-filter{
+                padding-left: 15% !important;
+            }
+            .show-filter1{
+                padding: 0px !important;
+            }
+            .lpad{
+                padding-left: 0px !important;
+            }
+            .round-button {
+                padding: 8px 17px !important;
+                font-size: 14px !important;
+            }
+            .label-Now,.dropdown-button {
+                font-size: 18px !important;
+            }
+            .font-date{
+                margin-top: 1% !important;
+                font-size: 15px !important;
+            }
+            .mb-4 {
+                margin-bottom: 1rem !important;
+            }
+            .space3{
+                margin-bottom: 1% !important;
+            }
+        }
+        @media only screen and (max-width: 575px) {
+            .hide-mobile  {
+                display: none !important;
+            }
+            .round-button {
+                padding: 9px 7px !important;
+                font-size: 15px !important;
+            }
+            .label-Now{
+                font-size: 20px;
+            }
+            .dropdown-button {
+                font-size: 20px;
+                font-weight:bold;
+            }
+            .border,.remove-divider   {
+                border: none !important;
+            }
+            .show-mobile {
+                display: block;
+            }
+            .mobile-border {
+                border: 1px solid rgba(0,0,0,0.1) !important;
+                margin-bottom: 10px;
+            }
+            .mb-4, .pt-1,.pb-1{
+                margin-bottom: 0px !important;
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;;
+            }
+            .col-xs-6 {
+                flex: 0 0 auto;
+                width: 40%;
+            }
+            .col-sm-3, .col-sm-6 {
+                width: 100% !important;
+            }
+            .input-group-sm i {
+                font-size: 18px !important;
+                padding-left: 2px;
+            }
+            .input-group-sm input,.input-group-sm span,.font-date,.show-filter1,.list {
+                font-size: 15px !important;
+            }
+            .list {   
+                padding-left: 5% !important;
+            }
+            .col-xs-7 {
+                padding-right: 15px !important;
+            }
+           .space3{
+                margin-top: 3% !important;
+            }
+            .find-button{
+                width: 100% !important;
+                font-size: 18px !important;
+            }
+            .mobile-mt-3 {
+                margin-top: 15px !important;
+                margin-bottom: 20px !important;
+                padding: 0px !important;
+            }
+            .events {
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+            .i-filter{
+                padding-left: 0px !important;
+                padding-right: 6px !important;
+
+            }
+        }
+        
+    </style>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" ></script>
+    -->
+  </body>
+</html>

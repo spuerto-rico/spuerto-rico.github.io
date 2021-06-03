@@ -13,49 +13,45 @@
   </head>
   <body>
     <div class="container-fluid page-padding border-black-decor">
-        <div class="row border mt-5 mb-4 pt-1 pb-1">
-            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border ps-0 pe-0 ">
+        <div class="row border mt-5 mb-4 pt-1 pb-1 ">
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border search">
                 <div class="input-group input-group-sm  input-group-lg divider remove-divider">
                     <span class="input-group-text border-0 background-color" ><i class="bi bi-search "></i></span>
-                    <input type="text" class="form-control border-0 " placeholder="Search for Events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input type="text" class="form-control border-0 lpad " placeholder="Search for Events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border ps-0 pe-0">
+            <div class="col-sm-3 col-lg-4 d-flex align-items-center mobile-border search">
                 <div class="input-group input-group-sm input-group-lg  ">
                     <span class="input-group-text border-0 background-color" ><i class="bi bi-geo-alt"></i></span>
                     <input type="text" class="form-control border-0 " placeholder="In a Location" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4  p-0">
-                <div class="row" >
-                    <div class="col-xs-12 col-sm-4 col-lg-4 d-flex align-items-center hide-mobile "> 
-                        <button type="button" class="btn btn-sm btn-lg find-button text-nowrap " >Find Events</button>
+            <div class="col-sm-6 col-lg-4 f-search p-0">
+                <div class="row size" >
+                    <div class="col-xs-12 col-sm-4 col-lg-5 d-flex align-items-center hide-mobile f-pad "> 
+                        <button type="button" class="btn btn-lg btn-sm find-button text-nowrap " >Find Events</button>
                     </div>
-                    <div class="col-xs-6 col-sm-4 col-lg-4 d-flex align-items-center pe-0">
-                        <div class="middle-align1 ">
-                            <div class="input-group input-group-sm input-group-lg flex-nowrap "   >
-                                <span class="input-group-text border-0 show-filter"><i class="bi bi-sliders"></i></span>
-                                <span class="input-group-text border-0 show-filter"> Show Filters</span>
-                            </div>  
-                        </div>
-                        <div class="mobile-divider">&nbsp</div>
+                    <div class="col-xs-6 col-sm-4 col-lg-5 d-flex align-items-center filter ">
+                        <div class="input-group input-group-sm input-group-lg flex-nowrap "   >
+                            <span class="input-group-text border-0 show-filter i-filter"><i class="bi bi-sliders"></i></span>
+                            <span class="input-group-text border-0 show-filter1"> Show Filters</span>
+                        </div>  
+                        <div class="divider">&nbsp;</div>
                     </div>
-                    <div class="col-xs-6 col-sm-4 col-lg-4 d-flex align-items-center ps-0 " >
-                        <div class="middle-align ">
-                            <div class="dropdown"  >
-                                <button class="btn dropdown-toggle list" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <b> List</b>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-2 d-flex align-items-center d-size " >
+                        <div class="dropdown "  >
+                            <button class="btn dropdown-toggle list" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b> List</b>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-lg-12  hide-desktop align-items-center show-mobile mobile-mt-3"> 
-                        <button type="button" class="btn find-button text-nowrap " >Find Events</button>
+                        <button type="button" class="btn btn-lg btn-sm find-button text-nowrap " >Find Events</button>
                     </div>
                 </div>
              </div>    
@@ -73,7 +69,7 @@
             </div>
         </div>
         
-        <div class="row mb-4 space3">
+        <div class="row mb-4 space3">   
             <div class="col p-0">
                 <table class="width-now" cellpadding="0" cellspacing="0">
                     <tr>
@@ -124,12 +120,19 @@
                             </div>
                         </div>
                         <div class="row event-title" ><label> International Women's Day 2021 </label></div>
-                        <div class="row event-address " ><p><i class="bi bi-geo-alt bi-address" ></i><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</p></div>
+                        <div class="row f-address e-margin" >
+                            <div class="col-1 i-width">
+                                <i class="bi bi-geo-alt " ></i>
+                            </div>
+                            <div class="col f-address tab">
+                                <label ><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                            </div>
+                        </div>
                         <div class="row event-detail "> <p  >International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
-                                the world and is a call to action for accelerating genter equality. During March and April 2021...<br><b><a  href="#" class="continue" >Continue Reading</a></b></p></div>
+                                the world and is a call to action for accelerating genter equality. During March and April 2021...<br><b><a  href="view.html" class="continue" >Continue Reading</a></b></p></div>
                         <div class="row font-price d-flex jflex-row bd-highlight ">
                             <span class="mobile-price ">
-                                <label class="space1"><b>Net Price : $350</b></label>
+                                <label class="space1 "><b>Net Price : $350</b></label>
                                 <label class="divider" >&nbsp;</label>
                                 <label class="space1 space2" >excl. 19.00% VAT corr. $66.50</label>
                                 <label class="divider hide-mobile" >&nbsp;</label>
@@ -165,9 +168,16 @@
                             </div>
                         </div>
                         <div class="row event-title" ><label> International Women's Day 2021 </label></div>
-                        <div class="row event-address " ><p><i class="bi bi-geo-alt bi-address" ></i><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</p></div>
+                        <div class="row f-address e-margin" >
+                            <div class="col-1 i-width">
+                                <i class="bi bi-geo-alt " ></i>
+                            </div>
+                            <div class="col f-address tab">
+                                <label ><b>Colorado</b> 24 The Shore Santa Monica, Denver IT Center</label>
+                            </div>
+                        </div>
                         <div class="row event-detail "> <p  >International Women's Day 2021 brings together thousands of developers globally as a moment to provide visibility for the incredible contributions of women around 
-                                the world and is a call to action for accelerating genter equality. During March and April 2021...<br><b><a  href="#" class="continue" >Continue Reading</a></b></p></div>
+                                the world and is a call to action for accelerating genter equality. During March and April 2021...<br><b><a  href="view.html" class="continue" >Continue Reading</a></b></p></div>
                         <div class="row font-price d-flex jflex-row bd-highlight ">
                             <span class="mobile-price ">
                                 <label class="space1"><b>Net Price : $350</b></label>
@@ -210,7 +220,6 @@
         }
         .image {
             width: 100%;
-            /* height: 100%; */
             max-height: 434px;
             object-fit: cover;
         }
@@ -239,14 +248,11 @@
         .input-group-lg  i {
             padding-left: 10px;
         }
-        .input-group-lg  i, .input-group-lg input {
+        .input-group-lg  i, .input-group-lg input,.input-group-lg span  {
             font-size: 18px !important;
         }
-        .input-group-lg span {
-            font-size: 18px !important;
-        }
-        .bi-sliders,.show-filter,.background-color{
-            background-color:white ;    
+        .bi-sliders,.show-filter,.show-filter1,.background-color{
+            background-color:transparent ;    
         }
         .line{
             border-top: 1px solid  rgba(0,0,0,0.1);
@@ -257,19 +263,19 @@
             padding-right: 8%;
         }
         .paddings{
-            padding-top: 35px;
-            padding-bottom: 35px;
-            padding-right: 35px;
-            margin-bottom: 35px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-right: 3%;
+            margin-bottom: 3%;
         }
         .mtop{
             margin-top: 35px;
         }
         .space1{
-            margin-right: 20px;
+            margin-right: 2%;
         }
         .space2{
-            margin-left: 20px;
+            margin-left: 2%;
         }
         .signup-button {
             width: 186px;
@@ -282,8 +288,8 @@
             color: white;
         }
         .find-button {
-            width: 186px;
-            height: 58px;
+            width: 180px;
+            height: 50px;
             background: #FF6633;
             border-radius: 5px;
             font-size: 20px;
@@ -321,9 +327,7 @@
             width: 100px;
         }
         .date{
-            width: 5%;
-                /* padding-left: 30px;
-                padding-right: 50px; */
+            width: 6%;
         }
         .td-width{
             width: 100px;
@@ -340,7 +344,7 @@
             font-weight: bold;
         }
         .font-price{
-            margin-top: 25px;
+            margin-top: 3.5%;
             font-size: 18px;
             text-align: left;
             padding-left: 0px;
@@ -362,6 +366,9 @@
         .divider {
             border-right: 1px solid lightgray;
         }
+        .listdivider {
+            border-left: 1px solid lightgray;
+        }
         .label-1{
             margin-left: 10px;
             font-size: 18px;
@@ -371,27 +378,26 @@
             font-size: 18px;
         }
         .event-title{
-            margin-top: 18px ;
+            margin-top: 2% ;
             font-size: 32px;
             font-weight: bold;
         }
-        .event-address{
-            margin-top: 20px ;
+        .f-address{
             font-size: 20px;
-            /* line-height: 24px; */
-        }
-        .event-address b{
-            margin-left: 10px;
         }
         .event-detail p{
-            margin-top: 23px ;
+            margin-top: 2% ;
             font-size: 18px;
+            width: 100%;
+            overflow: hidden;
+            display: inline-block;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
             line-height: 30px;
+            margin-right: 0px ;
+            padding-right: 0px ;
         }
-        .event-detail{
-            margin-right: 10px;
-        }
-        .event-address p, .event-detail p{
+        .event-detail p{
             margin-bottom: 0% !important;
         }
         .hide-desktop {
@@ -414,33 +420,41 @@
             -webkit-appearance:none;
             box-shadow: none !important;
         }
-        .middle-align  {
-            margin-right: auto; 
-            margin-left: 78px ;
+        .size{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
         }
-        .middle-align1{
-            margin-right: 45px; 
-            margin-left: 20px;
+        .filter{
+            margin-left: 0px;
+            padding: 0px;
+            width: 37%;
+        }
+        .d-size{
+            width: 21%;
+            padding-left: 3%;
+        }
+        .dropdown {
+                width: 100%;
+        }
+        .search{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .e-margin{
+            margin-top: 2%;
         }
         .col-lg-7  {
             padding-right: 115px ;
         }
-        .mobile-divider {
-            border-right: 1px solid rgba(0,0,0,0.1) !important;
-            height: 33px;
+        .i-width{
+            width: 30px;
         }
-        @media (min-width: 768px) and (max-width: 1600px) {
-  
+        @media (min-width: 992px) and (max-width: 1600px) {
             .find-button {
-                padding: 2px 10px !important;
-                width: 103px;
-                height: 34px;
-                left: 407px;
-                top: 106px;
-                font-size: 13px;
-            }
-            .find-button:hover {
-                padding: 2px 10px !important;
+                width: 150px;
+                height: 40px;
+                font-size: 15px;
             }
             .list{
                 font-size: 14px !important;
@@ -448,24 +462,19 @@
             .input-group-lg  i {
                 padding-left: 2px;
             }
-            .input-group-lg  i, .input-group-lg input {
-                font-size: 14px !important;
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span {
+                font-size: 15px !important;
             }
-            .input-group-lg span {
-                font-size: 14px !important;     
+            .search {
+                width: 30% ;
             }
-            .middle-align1 {
-                margin-right: 17px !important;
-                margin-left: auto !important;
-            }
-            .middle-align{
-                margin-right: auto !important   ; 
-                margin-left: 40px !important;
+            .f-search{
+                width: 40%;
             }
             .mtop{
                 margin-top: 31px !important; 
             }
-            .font-date{
+            .font-date,.f-address{
                 font-size: 18px !important;
             }
             .label-Now{
@@ -486,12 +495,15 @@
                 font-size: 22px !important;
                 font-weight: bold;
             }
-            .label-1,.label-2,.event-address,.event-detail p,.font-price{
+            .label-1,.label-2,.event-detail p{
                 font-size: 16px !important;
+            }
+            .event-detail p{
+                padding-right: 6.5% !important;
             }
             .event-title{
                 font-size: 26px !important;
-                margin-top: 17px !important;
+                margin-top: 3% !important;
             }
             .font-price{
                 margin-top: 20px !important;
@@ -501,25 +513,22 @@
                 width: 100%;
             }
             .date{
-                width: 5% !important;
-                /* padding-left: 20px !important;
-                padding-right: 40px !important; */
+                width: 8% !important;
             }
             .bookmark-color{
                 color: #FFCC33;
                 width: 14px !important;
             }
             .space1{
-                margin-right: 15px;
+                margin-right: 1.5% !important;
             }
             .space2{
-                margin-left: 15px;
+                margin-left: 1.5% !important;
             }
             .signup-button, .view-button{
-                width: 133px;
+                width: 30% !important;
                 height: 49px;
                 font-size: 16px;
-                margin-bottom: 30px !important;
             }
             .view-button{
                 margin-left: 15px !important;
@@ -536,28 +545,222 @@
             }
             img.image {
                 width: 100% !important;
-                /* height: auto !important; */
             }
-            .paddings{
-                padding-top: 26px;
-                padding-bottom: 25px;
-                padding-right: 35px;
-                margin-bottom: 35px;
+            .paddings {
+                margin-bottom: 3% !important;
+                padding-right: 4% !important;
+                padding-top: 3% !important;
             }
-  
-        }     
-        @media only screen and (max-width: 411px) {
-            .signup-button,.view-button{
-                width: 115px !important;
-                height: 49px !important;
+            .f-search .f-pad{
+                padding: 0px !important;
+            }
+            .i-width {
+                width: 29px !important;
+            }
+            .f-address {
+                padding-left: 0px !important;
+            }
+            .tab{
+                margin-left: 2% !important;
+            }
+            .e-margin {
+                margin-top: 4% !important;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .input-group-lg  i {
+                padding-left: 2px;
+            }
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span, .list {
                 font-size: 13px !important;
             }
-            .col-xs-6 {
-                flex: 0 0 auto;
-                width: 50% !important;
+            .find-button {
+                width: 150px;
+                height: 38px;
+                font-size: 15px;
             }
-        }  
-        @media only screen and (max-width: 767px) {
+            .search {
+                width: 30% !important;
+            }
+            .f-search{
+                width: 40% !important;
+            }
+            .f-search .f-pad,.show-filter1{
+                padding: 0px !important;
+            }
+            .round-button {
+                padding: 10px 18px !important;
+                font-size: 15px !important;
+            }
+            .label-Now,.dropdown-button {
+                font-size: 22px !important;
+            }
+            .font-date{
+                font-size: 18px !important;
+            }
+            .mb-4 {
+                margin-bottom: 1.4rem !important;
+            }
+            .font-day {
+                font-size: 15px !important;
+            }
+            .font-day2 {
+                font-size: 27px !important;
+            }
+            .date {
+                width: 10%;
+            }
+            .paddings {
+                margin-bottom: 5% !important;
+                padding-right: 5% !important;
+                padding-top: 5% !important;
+            }
+            .label-1,.label-2,.f-address,.event-detail p,.font-price{
+                font-size: 16px !important;
+            }
+            .event-detail p{
+                -webkit-line-clamp: 4 !important;
+                line-height: 25px !important;
+                padding-right: 0px !important;
+                font-size: 16px !important;
+                margin-top: 3% !important;
+            }
+            .col-lg-7 {
+                padding-right: 0px !important;
+            }
+            .mtop {
+                margin-top: 4% !important;
+            }
+            .signup-button,.view-button{
+                width: 27% !important;
+                height: 49px !important;
+                font-size: 16px !important;
+            }
+            .space2 {
+                margin-left: 1.5% !important;
+            }
+            .space1{
+                margin-right: 1.5% !important;
+            }
+            .img-padding {
+                margin-top: 5% !important;
+                padding-left: 2% !important;
+                padding-right: 2% !important;
+            }
+            .i-width {
+                width: 29px !important;
+            }
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            .input-group-lg  i {
+                padding-left: 1px !important;
+            }
+            .input-group-lg  i, .input-group-lg input,.input-group-lg span, .list {
+                font-size: 12px !important;
+            }
+            .find-button {
+                width: 130px !important;
+                height: 30px !important;
+                font-size: 13px !important;
+            }
+            .filter{
+                width: 40% !important;
+            }
+            .show-filter{
+                padding-left: 15% !important;
+            }
+            .show-filter1{
+                padding: 0px !important;
+            }
+            .lpad{
+                padding-left: 0px !important;
+            }
+            .round-button {
+                padding: 8px 17px !important;
+                font-size: 14px !important;
+            }
+            .signup-button,.view-button{
+                width: 35% !important;
+                height: 49px !important;
+                font-size: 15px !important;
+            }
+            .label-Now,.dropdown-button {
+                font-size: 18px !important;
+            }
+            .font-date{
+                margin-top: 1% !important;
+                font-size: 15px !important;
+            }
+            .mb-4 {
+                margin-bottom: 1rem !important;
+            }
+            .space3{
+                margin-bottom: 1% !important;
+            }
+            .e-margin{
+                margin-top: 2% !important;
+            }
+            .date{
+                width: 11% !important
+            }
+            .show-filter{
+                padding:0px !important;
+            }
+            .font-day {
+                font-size: 15px !important;
+            }
+            .font-day2 {
+                font-size: 27px !important;
+            }
+            .paddings {
+                margin-bottom: 5% !important;
+                padding-right: 4% !important;
+                padding-top: 4% !important;
+            }
+            .label-1,.label-2,.f-address{
+                font-size: 16px !important;
+            }
+            .col-lg-7  {
+                padding-right: 0px !important;
+            }
+            .event-title {
+                margin-top: 2% !important;
+                font-size: 28px !important;
+            }
+            .f-address{
+                padding-left: 0% !important;
+            }
+            .i-width{
+                padding-left: 2% !important;
+                width: 37px;
+            }
+            .event-detail p{
+                -webkit-line-clamp: 4 !important;
+                line-height: 25px !important;
+                padding-right: 0px !important;
+                font-size: 16px !important;
+                margin-top: 3% !important;
+            }
+            .font-price {
+                margin-top: 3% !important;
+                font-size: 15px !important;
+            }
+            .space2 {
+                margin-left: 1%;
+            }
+            .space1{
+                margin-right: 1%;
+            }
+            .mtop {
+                margin-top: 4%;
+            }
+            .img-padding{
+                margin-top: 4%;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+        @media only screen and (max-width: 575px) {
             .date, .hide-mobile  {
                 display: none !important;
             }
@@ -576,22 +779,37 @@
                 font-size: 12px !important;
                 margin-left: 7px !important;
             }
-            .event-title{
-                font-size: 19px;
+            .f-address{
+                font-size: 12px;
             }
-            .event-address,.event-detail p{
+            .event-title{
+                font-size: 19px !important;
+                margin-top: 3% !important;
+            }
+            .event-detail p,.e-margin {
                 font-size: 14px !important;
-                margin-top: 17px !important;
+                margin-top: 4% !important;
             }
             .font-price{
                 font-size: 14px !important;
                 margin-top: 10px !important;
+                width: 100%;
+            }
+            .event-detail {
+                margin-right: 0px !important;
+                padding-right: 0px !important;
             }
             .event-detail p{
-                line-height: 25px !important;
+                width: 100%;
+                overflow: hidden;
+                display: inline-block;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                line-height: 25px;
+                margin-right: 0px !important;
+                padding-right: 0px !important;
             }
             .events {
-                /* width: 100%; */
                 overflow-x: auto;
                 overflow-y: hidden;
                 white-space: nowrap; 
@@ -612,9 +830,6 @@
                 border: 1px solid rgba(0,0,0,0.1) !important;
                 margin-bottom: 10px;
             }
-            .mobile-divider {
-                border-right: 1px solid rgba(0,0,0,0.1) !important;
-            }
             .mobile-mb-2 {
                 margin-bottom: 5px !important;
             }
@@ -631,14 +846,14 @@
             .mobile-price{
                 padding-right: 0px !important;
             }
-            .middle-align1{
-                margin-right: 10px !important; 
-                margin-left: 0px !important;
-                width: 100% !important;
-            }
             .mobile-mt-3{
                 margin-top: 15px !important;
                 margin-bottom: 20px !important;
+                padding: 0px !important;
+            }
+            .i-filter{
+                padding-left: 0px !important;
+                padding-right: 6px !important;
             }
             .mtop{
                 margin-top: 22px !important; 
@@ -653,21 +868,20 @@
                 border-left-width: #FFCC33;
                 border-left-width: 3px !important;
             }
-            .paddings{
-                padding-top: 20px !important;
-                padding-right: 5px !important;
-                padding-bottom: 20px !important;
+            .paddings {
+                padding: 5% !important;
+                margin-bottom: 7% !important;
             }
             .show-border{
-                margin-left: 8px !important;
-                /* margin-right: 0px !important; */
+                margin: 0px !important;
+                padding: 0px !important;
             }
             .bookmark{
                 padding-right: 0px !important;
             }
             .col-xs-6 {
                 flex: 0 0 auto;
-                width: 45%;
+                width: 40%;
             }
             .col-sm-3, .col-sm-6 {
                 width: 100% !important;
@@ -679,11 +893,14 @@
                 margin-left: 5px !important;
             }
             .input-group-sm i {
-                font-size: 20px !important;
+                font-size: 18px !important;
                 padding-left: 2px;
             }
-            .input-group-sm input,.input-group-sm span,.font-date,.show-filter {
-                font-size: 16px !important;
+            .input-group-sm input,.input-group-sm span,.font-date,.show-filter1,.list {
+                font-size: 15px !important;
+            }
+            .list {   
+                padding-left: 5% !important;
             }
             .col-xs-7 {
                 padding-right: 15px !important;
@@ -695,32 +912,29 @@
             }
             .img-padding{
                 width: 95%;
-                /* height: 196px; */
-                background-color: #C4C4C4;
                 margin-left: 10px !important;
-                padding: 0px;
-                margin-top: 20px !important;
+                margin-top: 0% !important;
             }
             .space3{
-                margin-top: 25px !important;
+                margin-top: 3% !important;
             }
             .find-button{
-                /* width: 335px !important; */
-                /* height: 49px !important; */
                 width: 100% !important;
                 font-size: 18px !important;
             }
             .signup-button, .view-button{
-                width: 133px;
+                width: 46% !important;
                 height: 49px;
                 font-size: 16px;
                 margin-bottom: 30px !important;
             }
-            .font-price{
-                width: 100%;
+            .i-width {
+                width: 25px;
+            }
+            .non-featured-event .label-2{
+                margin-left: 0px !important;
             }
         }
-
         
     </style>
     
