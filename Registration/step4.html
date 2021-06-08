@@ -193,9 +193,7 @@
         </div>
     </div>
 
-<!--  tablet -->
-
-    <div class="container-fluid t-size  hide-desktop">
+    <div class="container-fluid t-size sh-tablet ">
         <div class="row margin-top d-padding">
             <div class="col ">
                 <div class="row r-width">
@@ -218,14 +216,12 @@
                         <label for="">Address</label>
                     </div>
                 </div>
-            <!-- </div>
-        </div> -->
-                <div class="row fs-top">
+                <div class="row fs-top ">
                     <div class="col-4">
-                        <label for="">Mr. Rico Puerto</label>
+                        <label class="list"for="">Mr. Rico Puerto</label>
                     </div>
                     <div class="col-8">
-                        <label for="">Casa Mira Subdivision, Linao, Minglanilla, Cebu, Philippines</label>
+                        <label class="list" for="">Casa Mira Subdivision, Linao, Minglanilla, Cebu, Philippines</label>
                     </div>
                 </div>
             </div>
@@ -239,94 +235,10 @@
             </div>
         </div>
     </div>
-<!-- --------  -->
-    <div class="container-fluid t-size m-top d-padding hide-tablet">
-        <div class="row ">
-            <div class="col ">
-                <div class="row r-width">
-                        <label class="f-header">Billing Address</label>
-                </div>
-                <div class="row r-width f-top title ">
-                    <div class="col">
-                        <label for="">Full Name</label>
-                    </div>
-                    <div class="col">
-                        <label for="">Email</label>
-                    </div>
-                    <div class="col">
-                        <label for="">Phone</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row fs-top">
-            <div class="col ">
-                <div class="row r-width list  ">
-                    <div class="col">
-                        <label for="">Mr. Rico Puerto</label>
-                    </div>
-                    <div class="col">
-                        <label for="">rico@gmail.com</label>
-                    </div>
-                    <div class="col">
-                        <label for="">09227222875</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col ">
-                <div class="row r-width f-top title ">
-                    <div class="col">
-                        <label for="">Address</label>
-                    </div>
-                    <div class="col">
-                        <label for="">Company</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                </div>
-                <div class="row r-width nx-top list  ">
-                    <div class="col">
-                        <label for="">Casa Mira Subdivision, Linao, Minglanilla, Cebu, Philippines</label>
-                    </div>
-                    <div class="col">
-                        <label for="">Wundercoach</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                    <div class="col">
-                        <label for="">&nbsp;</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid cd-padding ">
         <label class="check-label">Contact Us</label><br />
         <label class="f-confirm">If you have any questions, please contact <a href="#" class="stretched-link">info@gisa-marburg.de</a>.</label>
     </div>
-    <!-- <div class="container-fluid t-size m-top">
-        <div class="row  ">
-            <div class="col p-0 m-0">
-                <button type="button" class="btn back-button text-nowrap ">Back</button>
-            </div>
-            <div class="col p-0 m-0">
-                <button type="button" class="btn confirm-button text-nowrap ">Confirm Order</button>
-            </div>
-        </div>
-    </div> -->
     <div class="container-fluid footer">
         &nbsp;
     </div>
@@ -466,14 +378,6 @@
             box-sizing: border-box;
             border-radius: 5px;
         }
-        .confirm-button{
-            width: 231px;
-            height: 60px;
-            background: #FF6633;
-            border-radius: 5px;
-            float: right;
-            color:#FFFFFF;
-        }
         .showMore-button{
             width: 231px;
             height: 60px;
@@ -528,8 +432,31 @@
                 width: 87px !important;
                 height: 54px !important;
                 font-size: 18px !important;
+            }   
+            .f-header {
+                font-size: 23px !important;
             }
-        
+            .title {
+                font-size: 18px !important;
+            }
+            .list {
+                font-size: 17px !important;
+            }
+            .check-label {
+                font-size: 22px !important;
+            }
+            .f-confirm {
+                font-size: 18px !important;
+            }
+            .sh-mobile{
+                display: none !important;
+            }
+            .sh-tablet{
+                display: none !important;
+            }
+            .hide-tablet{
+                display: block !important;
+            }
         }
         @media (min-width: 768px) and (max-width: 991px) {
             .margin-top {
@@ -543,13 +470,15 @@
                 font-size: 24px !important;
             }
             .f-header {
-                font-size: 20px !important;
-            }
-            .title {
                 font-size: 18px !important;
             }
-            .hide-tablet{
-                display: none !important;
+            .title {
+                font-size: 15px !important;
+            }
+            .showMore-button {
+                width: 27% !important;
+                height: 44px !important;
+                font-size: 16px !important;
             }
             .back-button{
                 width: 40% !important;
@@ -565,13 +494,32 @@
             .hide-desktop{
                 display: block !important;
             }
-            .confirm-button {
-                width: 45% !important;
-                height: 44px !important;
-                font-size: 16px !important;
+            .img-setting {
+                width: 64% !important;
+            }
+            .f-thank {
+                font-size: 35px !important;
+            }
+            .check-label {
+                font-size: 17px !important;
+            }
+            .f-confirm {
+                font-size: 13px !important;
+            }
+            .f-email {
+                font-size: 17px !important;
+            }
+            .list {
+                font-size: 13px !important;
+            }
+            .sh-mobile{
+                display: none !important;
+            }
+            .sh-tablet{
+                display: none !important;
             }
         }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (min-width: 576px) and (max-width: 768px) {
             .margin-top {
                 margin-top: 4% !important;
             }
@@ -617,12 +565,45 @@
                 height: 40px !important;
                 font-size: 13px !important;
             }
-            .confirm-button {
-                width: 40% !important;
-                height: 50px !important;
+            .edit-button {
+                width: 42% !important;
+                font-size: 14px !important;
+            }
+            .img-setting {
+                width: 57% !important;
+            }
+            .f-thank {
+                font-size: 29px !important;
+            }
+            .f-email {
+                font-size: 17px !important;
+            }
+            .cd-padding {
+                width: 90% !important;
+            }
+            .f-confirm {
+                font-size: 14px !important;
+            }
+            .check-label {
+                font-size: 15px !important;
+            }
+            .sh-mobile{
+                display: none !important;
+            }
+            .sh-tablet{
+                display: block !important;
+            }
+            .f-header {
+                font-size: 20px !important;
+            }
+            .title {
+                font-size: 15px !important;
+            }
+            .list {
+                font-size: 13px !important;
             }
         }
-        @media only screen and (max-width: 575px) {
+        @media only screen and (max-width: 576px) {
             .margin-top {
                 margin-top: 4% !important;
             }
@@ -637,6 +618,9 @@
             .d-padding {
                 padding-left: 1% !important;
                 padding-right: 1% !important;
+            }
+            .cd-padding {
+                width: 87%;
             }
             .f-date{
                 font-size: 13px !important;
@@ -663,12 +647,10 @@
                 display: block !important;
             }
             .sh-mobile .edit-button{
-                width: 30%;
+                width: 40%;
             }
-            .confirm-button {
-                width: 160px !important;
-                height: 39px !important;   
-                font-size: 13px !important;
+            .sh-mobile .r-width{
+                padding-left: 3% !important;
             }
             .back-button{
                 width: 85px !important;
@@ -679,10 +661,28 @@
             {
                 display: block !important;
             }
-            .f-header {
+            .f-header,.title,.list {
                 font-size: 17px !important;
             }
-
+            .sh-tablet{
+                display: block !important;
+            }
+            .img-setting {
+                width: 56% !important;
+            }
+            .f-thank {
+                font-size: 19px !important;
+            }
+            .f-email {
+                font-size: 14px !important;
+            }
+            
+            .check-label {
+                font-size: 14px !important;
+            }
+            .f-confirm {
+                font-size: 10px !important;
+            }
         }
 
         
