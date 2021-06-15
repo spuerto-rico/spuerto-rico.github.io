@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Wundercoach | Dashboard</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://wundercoach.net/wp-content/uploads/wundercoach-favicon.png">
+
+
+    <!-- DEMO CHARTS -->
+    <link rel="stylesheet" href="public/demo/chartist.css">
+    <link rel="stylesheet" href="public/demo/chartist-plugin-tooltip.css">
+
+    <!-- Template -->
+    <link rel="stylesheet" href="public/graindashboard/css/graindashboard.css">
+
+    <!-- Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<style>
+    /* .navbar-brand-wrapper, .side-nav {
+        width: 16.63rem !important;
+    } */
+     .side-nav-menu-item.active>.side-nav-menu-link, .side-nav-menu-link.active, .side-nav-menu-link:hover {
+        text-decoration: none;
+        color: #FF6633;
+        background-color: #FDF3EF;
+     }
+     .bg-body, .side-nav{
+         background-color: white !important ;
+     }
+     .media-body {
+        font-size: 18px !important;
+        margin-top: 9px;
+        margin-bottom: 0px;
+     }
+     .side-side-nav-control-icon{
+        margin-top: 15px;
+     }
+     .edit-button{
+        width: 100%;
+        height: auto;
+        background: #FF6633;
+        border-radius: 5px;
+        color: white;
+     }
+     .create-button,.select-button{
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #515151;
+     }
+     .side-nav-edit{
+         width: 100%;
+         height:100%;
+         color: #ffffff; 
+         font-size: 20px; 
+         background-color:#FF6633;
+         
+     }
+     .col-auto{
+         padding-left: 0%;
+         padding-right: 0%;
+     }
+     .sidebar-column-layout{
+         width: 100%;
+         height: 4.0625rem;
+    }
+    .text-column-layout{
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .column-layout{
+        width: 100%;
+        height: 7.0625rem;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+    .column-layout .col-6{
+        max-width: 47%;
+    }
+    .layout-box
+    {
+        width: 103px;
+        height: 87px;
+        background: #C4C4C4;
+        border-radius: 5px; 
+    }
+</style>
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header bg-body">
+    <nav class="navbar flex-nowrap p-0">
+        <div class="navbar-brand-wrapper d-flex align-items-center col-auto">
+            <!-- Logo For Mobile View -->
+            <a class="navbar-brand navbar-brand-mobile" href="/">
+                <img class="img-fluid w-100" src="images/wundercoach-logo.png" alt="Graindashboard">
+            </a>
+            <!-- End Logo For Mobile View -->
+
+            <!-- Logo For Desktop View -->
+            <!-- <a class="navbar-brand navbar-brand-desktop" href="/">
+                <img class="side-nav-show-on-closed" src="images/wundercoach-logo-solo.png" alt="Graindashboard" style="width: auto; height: 40px;">
+                <img class="side-nav-hide-on-closed" src="images/wundercoach-logo.png" alt="Graindashboard" style="width: auto; height: 64px;">
+            </a> -->
+            <div class="side-nav-edit d-flex align-items-center ">
+                <span class="text-column-layout" >Customize Chart</span>
+            </div>
+            <!-- End Logo For Desktop View -->
+        </div>
+
+        <div class="header-content col px-md-3">
+            <div class="d-flex align-items-center">
+                <!-- Side Nav Toggle -->
+                <a  class="js-side-nav header-invoker d-flex mr-md-2" href="#"
+                    data-close-invoker="#sidebarClose"
+                    data-target="#sidebar"
+                    data-target-wrapper="body">
+                    <i class="gd-align-left"></i>
+                </a>
+                <!-- End Side Nav Toggle -->
+
+
+                 <!-- Change Help -->
+                 <div class="dropdown mx-3 dropdown ml-auto">
+                    <span class="d-none d-md-block "href="#" data-unfold-event="click">Help</span>
+                </div>
+                <!-- End of Help -->
+
+                <!-- User Notifications -->
+                <div class="dropdown ml-2">
+                    <a id="notificationsInvoker" class="header-invoker" href="#" aria-controls="notifications" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#notifications" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
+                        <span class="indicator indicator-bordered indicator-top-right indicator-primary rounded-circle"></span>
+                        <i class="gd-bell"></i>
+                    </a>
+
+                    <div id="notifications" class="dropdown-menu dropdown-menu-center py-0 mt-4 w-18_75rem w-md-22_5rem unfold-css-animation unfold-hidden" aria-labelledby="notificationsInvoker" style="animation-duration: 300ms;">
+                        <div class="card">
+                            <div class="card-header d-flex align-items-center border-bottom py-3">
+                                <h5 class="mb-0">Notifications</h5>
+                                <a class="link small ml-auto" href="#">Clear All</a>
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex align-items-center text-nowrap mb-2">
+                                            <i class="gd-info-alt icon-text text-primary mr-2"></i>
+                                            <h6 class="font-weight-semi-bold mb-0">New Update</h6>
+                                            <span class="list-group-item-date text-muted ml-auto">just now</span>
+                                        </div>
+                                        <p class="mb-0">
+                                            Order <strong>#10000</strong> has been updated.
+                                        </p>
+                                        <a class="list-group-item-closer text-muted" href="#"><i class="gd-close"></i></a>
+                                    </div>
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex align-items-center text-nowrap mb-2">
+                                            <i class="gd-info-alt icon-text text-primary mr-2"></i>
+                                            <h6 class="font-weight-semi-bold mb-0">New Update</h6>
+                                            <span class="list-group-item-date text-muted ml-auto">just now</span>
+                                        </div>
+                                        <p class="mb-0">
+                                            Order <strong>#10001</strong> has been updated.
+                                        </p>
+                                        <a class="list-group-item-closer text-muted" href="#"><i class="gd-close"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User Notifications -->
+
+                <!-- User Avatar -->
+                <div class="dropdown mx-3 dropdown ml-2">
+                    <a id="profileMenuInvoker" class="header-complex-invoker" href="#" aria-controls="profileMenu" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#profileMenu" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
+                        <!--img class="avatar rounded-circle mr-md-2" src="#" alt="John Doe"-->
+                        <!-- <span class="mr-md-2 avatar-placeholder">J</span> -->
+                        <!-- <span class="material-icons d-flex mr-3 ">notifications_none</span> -->
+                        <!-- <i class="gd-light-bulb d-none d-md-block ml-2"></i> -->
+                        <!-- <span class="d-none d-md-block">John Doe</span> -->
+                        <!-- <i class="gd-angle-down d-none d-md-block ml-2"></i> -->
+                        <img class="avatar-xs rounded-circle" src="images/avatar.png" alt="Image description">
+                    </a>
+
+                    <ul id="profileMenu" class="unfold unfold-user unfold-light unfold-top unfold-centered position-absolute pt-2 pb-1 mt-4 unfold-css-animation unfold-hidden fadeOut" aria-labelledby="profileMenuInvoker" style="animation-duration: 300ms;">
+                        <li class="unfold-item">
+                            <a class="unfold-link d-flex align-items-center text-nowrap" href="#">
+                    <span class="unfold-item-icon mr-3">
+                      <i class="gd-user"></i>
+                    </span>
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="unfold-item unfold-item-has-divider">
+                            <a class="unfold-link d-flex align-items-center text-nowrap" href="#">
+                    <span class="unfold-item-icon mr-3">
+                      <i class="gd-power-off"></i>
+                    </span>
+                                Sign Out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End User Avatar -->
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+    <!-- Sidebar Nav -->
+    <aside id="sidebar" class="js-custom-scroll side-nav">
+        <div id="sideNav" class="side-nav-menu">
+            <div class="sidebar-column-layout d-flex align-items-center">
+                <span class="text-column-layout" >Column Layout</span>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">1 Column Layout</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">1/2 Column Layout</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">1/3 Column Layout</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">1/4 Column Layout</label></div>
+                </div>
+            </div>
+            <div><hr/></div>
+            <div class="sidebar-column-layout d-flex align-items-center">
+                <span class="text-column-layout" >Chart Selection</span>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Line Graph</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Bar Graph</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Spider Graph</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Pie Graph</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Static Graph</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Flow Chart</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Scatter Graph</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Geo Chart</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Bubble Chart</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Multi Series</label></div>
+                </div>
+            </div>
+            <div class="row column-layout d-flex align-items-center">
+                <div class="col-6 mb-0 mr-auto">
+                    <div class="layout-box "></div>
+                    <div ><label style="font-size: 11px;">Histogram Chart</label></div>
+                </div>
+                <div class="col-6 mb-0 mr-4">
+                    <div class="layout-box"></div>
+                    <div ><label style="font-size: 11px;">Dot Graph</label></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- End Sidebar Nav -->
+
+    <div class="content">
+            <div class="py-4 px-3 px-md-4">
+                <div class="mb-3 mb-md-4 d-flex ">
+                    <div class="h3 mb-0 mr-auto font-weight-semi-bold" >Dashboard</div>
+                    <div class=" mb-0 mr-4">
+                        <a href="index.html"><button type="button" class="btn edit-button text-nowrap " >Save Changes</button></a>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <!-- <footer class="small p-3 px-md-4 mt-auto">
+            <div class="row justify-content-between">
+                <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+                    <ul class="list-dot list-inline mb-0">
+                        <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+                        <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+                        <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg text-center mb-3 mb-lg-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="gd-twitter-alt"></i></a></li>
+                        <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="gd-facebook"></i></a></li>
+                        <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="gd-github"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg text-center text-lg-right">
+                    &copy; 2019 Graindashboard. All Rights Reserved.
+                </div>
+            </div>
+        </footer> -->
+        <!-- End Footer -->
+    </div>
+</main>
+
+
+<script src="public/graindashboard/js/graindashboard.js"></script>
+<script src="public/graindashboard/js/graindashboard.vendor.js"></script>
+
+<!-- DEMO CHARTS -->
+<script src="public/demo/resizeSensor.js"></script>
+<script src="public/demo/chartist.js"></script>
+<script src="public/demo/chartist-plugin-tooltip.js"></script>
+<script src="public/demo/gd.chartist-area.js"></script>
+<script src="public/demo/gd.chartist-bar.js"></script>
+<script src="public/demo/gd.chartist-donut.js"></script>
+<script>
+    $.GDCore.components.GDChartistArea.init('.js-area-chart');
+    $.GDCore.components.GDChartistBar.init('.js-bar-chart');
+    $.GDCore.components.GDChartistDonut.init('.js-donut-chart');
+</script>
+</body>
+</html>

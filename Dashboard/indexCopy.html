@@ -60,66 +60,6 @@
         border-radius: 5px;
         color: #515151;
      }
-     .box-container{
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-     }
-     .rbox-layout{
-        width: 100%; 
-        height: auto; 
-        margin-right: 0px !important;
-        margin-right: 0px !important;
-     }
-     .box-alignment{
-        flex-direction: column;
-        margin-top: 2%;
-     }
-     .box-layout{
-        width: 100%;
-        height: auto;
-        background-color: white;
-        padding-top: 4%;
-        padding-bottom: 4%;
-     }
-     .box-header{
-        font-size: 24px;
-        font-weight: 600;
-     }
-     .ud-box,.register-box,.ncr-box{
-        width: 95%;
-        height: 62%;
-        border-radius: 5px;
-        margin-top: 10%;
-        margin-left: 0px;
-     }
-     .ud-box{
-        background: #FF6633;
-     } 
-     .register-box{
-        background: #3F66AF;
-     }
-     .ncr-box{
-        background: #DEA703;
-     }
-     .event-title{
-         font-size: 20px;
-         color: white;
-     }
-     .et-alignment{
-         margin-top: 5%;
-         margin-left: 5%;
-         margin-right: 5%;
-     }
-     .event-date{
-         font-size: 16px;
-         color: white;
-     }
-     .ed-alignment{
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-     }
 </style>
 <body class="has-sidebar has-fixed-sidebar-and-header">
 <!-- Header -->
@@ -495,10 +435,10 @@
     <!-- End Sidebar Nav -->
 
     <div class="content">
-        <div class="py-4 px-3 px-md-4 ">
+        <div class="py-4 px-3 px-md-4">
 
             <div class="mb-3 mb-md-4 d-flex ">
-                <div class="h2 mb-0 mr-auto font-weight-semi-bold" >Dashboard</div>
+                <div class="h3 mb-0 mr-auto font-weight-semi-bold" >Dashboard</div>
                 <div class=" mb-0 mr-4">
                     <button type="button" class="btn create-button text-nowrap " >Create a New Seminar</button>
                 </div>
@@ -510,123 +450,148 @@
                 </div>
             </div>
 
-            <div class="box-container mb-3 mb-md-4 d-flex ">
-                <div class="rbox-layout border d-flex align-items-center" >
-                    <div class="col-4 box-alignment " >
-                        <div class="row box-layout d-flex ">
-                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center;">
-                                <div class="row" style="width: 100%;">
-                                    <div class="col-9">
-                                        <span class="box-header ">Upcoming Dates</span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end" style="padding-right: 0px;">
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.999999C6.14951 0.999999 1 6.14827 1 12.5C1 18.8505 6.14951 24 12.5 24C18.8505 24 24 18.8505 24 12.5C24 6.14827 18.8505 1 12.5 0.999999Z" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.2931 8.18433L9.95914 12.4996L14.2931 16.8149" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>&nbsp;
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24C18.8505 24 24 18.8517 24 12.5C24 6.14951 18.8505 1 12.5 1C6.14951 1 1 6.14951 1 12.5C1 18.8517 6.14951 24 12.5 24Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.7069 16.8157L15.0409 12.5004L10.7069 8.18508" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                <div class="row ud-box d-flex ">
-                                    <div class="col align-items-center">
-                                        <div class="row et-alignment">
-                                            <span class="event-title">#AndroidDevChallenge:Try Jetpack Compose</span>
-                                        </div>
-                                        <div class="row ed-alignment">
-                                            <span class="event-date">June 1st, 2021 3:00PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+            <div class="container-fluid">
+
+                <div style="display: none;">
+                    <div id="onehalf">
+                        <div class="col-6 drop-zone">
+                            col-6
                         </div>
                         
                     </div>
-                    <div class="col-4  box-alignment ">
-                        <div class="row box-layout d-flex ">
-                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center;">
-                                <div class="row" style="width: 100%;">
-                                    <div class="col-9">
-                                        <span class="box-header ">Registration</span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end" style="padding-right: 0px;">
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.999999C6.14951 0.999999 1 6.14827 1 12.5C1 18.8505 6.14951 24 12.5 24C18.8505 24 24 18.8505 24 12.5C24 6.14827 18.8505 1 12.5 0.999999Z" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.2931 8.18433L9.95914 12.4996L14.2931 16.8149" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>&nbsp;
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24C18.8505 24 24 18.8517 24 12.5C24 6.14951 18.8505 1 12.5 1C6.14951 1 1 6.14951 1 12.5C1 18.8517 6.14951 24 12.5 24Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.7069 16.8157L15.0409 12.5004L10.7069 8.18508" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                <div class="row register-box  d-flex ">
-                                    <div class="col align-items-center">
-                                        <div class="row et-alignment">
-                                            <span class="event-title">#AndroidDevChallenge:Try Jetpack Compose</span>
-                                        </div>
-                                        <div class="row ed-alignment">
-                                            <span class="event-date">June 1st, 2021 3:00PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="onethird">
+                        <div class="col-4 drop-zone">
+                            col-4
                         </div>
-                       
                     </div>
-                    <div class="col-4  box-alignment ">
-                        <div class="row box-layout d-flex ">
-                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center;">
-                                <div class="row" style="width: 100%;">
-                                    <div class="col-9">
-                                        <span class="box-header ">New Coaching Request</span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-end" style="padding-right: 0px;">
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0.999999C6.14951 0.999999 1 6.14827 1 12.5C1 18.8505 6.14951 24 12.5 24C18.8505 24 24 18.8505 24 12.5C24 6.14827 18.8505 1 12.5 0.999999Z" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.2931 8.18433L9.95914 12.4996L14.2931 16.8149" stroke="#130F26" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>&nbsp;
-                                        <span class="">
-                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24C18.8505 24 24 18.8517 24 12.5C24 6.14951 18.8505 1 12.5 1C6.14951 1 1 6.14951 1 12.5C1 18.8517 6.14951 24 12.5 24Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.7069 16.8157L15.0409 12.5004L10.7069 8.18508" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                <div class="row ncr-box  d-flex ">
-                                    <div class="col align-items-center">
-                                        <div class="row et-alignment">
-                                            <span class="event-title">#AndroidDevChallenge:Try Jetpack Compose</span>
-                                        </div>
-                                        <div class="row ed-alignment">
-                                            <span class="event-date">June 1st, 2021 3:00PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="onewhole">
+                        <div class="col-12 drop-zone">
+                            one whole column
                         </div>
-                       
+                    </div>
+                    <div id="onefourth">
+                        <div class="col-3 drop-zone">
+                            col-3
+                        </div>
                     </div>
                 </div>
-            </div>    
-                
+                <div class="row">
+                    <div class="col-1">
+                        <div id="dragbox1/1" class="dragbox col" draggable="true">1/1</div>
+                    </div>
+                    <div class="col-1">
+                        <div id="dragbox1/2" class="dragbox" draggable="true">1/2</div>
+                    </div>
+                    <div class="col-1">
+                        <div id="dragbox1/3" class="dragbox col" draggable="true">1/3</div>
+                    </div>
+                    <div class="col-1">
+                        <div id="dragbox1/4" class="dragbox col" draggable="true">1/4</div>
+                    </div>
+                </div>
+                <div  id="main_container" class="row main_container">
+                    
+                </div>
+            </div>
+                    
+                            
+                <style>
+                    .dragbox {
+                        height: 80px;
+                        width: 80px;
+                        border: 1px dashed rgb(75, 74, 74);
+                    }
+
+                    .main_container {
+                        min-height: 100px;
+                        border: 1px solid #000;
+                        padding-top: 10px;
+                    }       
+
+                    .drop-zone {
+                        position: relative;
+                        z-index: 3;
+                        border: 1px dashed rgb(75, 74, 74);
+                    }
+                   
+                </style>
+
+                <script src="dist/dripDrop-dev.umd.js"></script>
+                <script>
+                    var dragboxOnehalf = document.getElementById("dragbox1/2")
+                    var dragboxOneForth = document.getElementById("dragbox1/4")
+                    var dragboxOneWhole = document.getElementById("dragbox1/1")
+                    var dragboxOneThird = document.getElementById("dragbox1/3")
+
+                    var containerDropzone = document.getElementById("main_container")
+
+                    var onehalf = document.getElementById("onehalf")
+                    var onefourth = document.getElementById("onefourth")
+                    var onethird = document.getElementById("onethird")
+                    var onewhole = document.getElementById("onewhole")
+
+                    dripDrop.drag(dragboxOnehalf, {
+                        image: true, // default drag image
+                        start: function(setData, e) {
+                            setData('myCustomData', onehalf.innerHTML) // camel case types are allowed!*
+                        },
+                        move: function() {
+                        },
+                        end: function() {
+                        }
+                    })
+
+                    dripDrop.drag(dragboxOneForth, {
+                        image: true, // default drag image
+                        start: function(setData, e) {
+                            setData('myCustomData', onefourth.innerHTML) // camel case types are allowed!*
+                        },
+                        move: function() {
+                        },
+                        end: function() {
+                        }
+                    })
+                        
+                    dripDrop.drag(dragboxOneWhole, {
+                        image: true, // default drag image
+                        start: function(setData, e) {
+                            setData('myCustomData', onewhole.innerHTML) // camel case types are allowed!*
+                        },
+                        move: function() {
+                        },
+                        end: function() {
+                        }
+                    })
+
+                    dripDrop.drag(dragboxOneThird, {
+                        image: true, // default drag image
+                        start: function(setData, e) {
+                            setData('myCustomData', onethird.innerHTML) // camel case types are allowed!*
+                        },
+                        move: function() {
+                        },
+                        end: function() {
+                        }
+                    })
+
+                    dripDrop.drop(containerDropzone, {
+                        enter: function() {
+                            // innerDropzone.innerHTML = 'hi'   
+                        },
+                        move: function(data, e) {
+                            e.stopPropagation()
+                            // containerDropzone.innerHTML += '.'
+                        },  
+                        leave: function() {
+                            // containerDropzone.innerHTML = 'bye'   
+                        },
+                        drop: function(data, e) {
+                            e.stopPropagation()
+                            containerDropzone.innerHTML =  containerDropzone.innerHTML +  data.myCustomData
+                        }
+                    })
+                    
+                </script>
                 
         </div>
        
