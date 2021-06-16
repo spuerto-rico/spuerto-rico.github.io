@@ -80,13 +80,14 @@
         height: auto;
         background-color: white;
         padding-top: 4%;
-        padding-bottom: 4%;
+        padding-bottom: 7%;
+        min-height: 250px;
      }
      .box-header{
         font-size: 24px;
         font-weight: 600;
      }
-     .ud-box,.register-box,.ncr-box{
+     .ud-box,.register-box{
         width: 95%;
         height: 62%;
         border-radius: 5px;
@@ -101,6 +102,16 @@
      }
      .ncr-box{
         background: #DEA703;
+        width: 95%;
+        height: 62%;
+        border-radius: 5px;
+        margin-top: 10%;
+        margin-left: 0px;
+     }
+     .chart-container{
+        height: 350px; 
+        min-width: 110px;
+	    max-width: 500px;
      }
      .event-title{
          font-size: 20px;
@@ -119,6 +130,9 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
+     }
+     .sales{
+         font-size: 18px;
      }
 </style>
 <body class="has-sidebar has-fixed-sidebar-and-header">
@@ -510,8 +524,8 @@
                 </div>
             </div>
 
-            <div class="box-container mb-3 mb-md-4 d-flex ">
-                <div class="rbox-layout border d-flex align-items-center" >
+            <div class="container-fluid box-container mb-3 mb-md-4 d-flex ">
+                <div class="row rbox-layout border d-flex align-items-center" >
                     <div class="col-4 box-alignment " >
                         <div class="row box-layout d-flex ">
                             <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center;">
@@ -578,8 +592,17 @@
                                         <div class="row et-alignment">
                                             <span class="event-title">#AndroidDevChallenge:Try Jetpack Compose</span>
                                         </div>
-                                        <div class="row ed-alignment">
-                                            <span class="event-date">June 1st, 2021 3:00PM</span>
+                                        <div class="row ed-alignment  ">
+                                            <div class="col" style="padding-left: 0px; padding-right: 0px;"><span class="event-date">June 1st, 2021 3:00PM</span></div>
+                                            <div class="col d-flex align-items-center justify-content-end " style="padding-right: 0px; ">
+                                                <svg style="margin-bottom: -2px;margin-right: 7px;" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="6" cy="6" r="6" fill="#FD5050"/>
+                                                </svg> 
+                                                <span class="event-date ">
+                                                    Adams, Whoopi
+                                                </span>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -611,12 +634,9 @@
                                 </div>
                                 
                                 <div class="row ncr-box  d-flex ">
-                                    <div class="col align-items-center">
-                                        <div class="row et-alignment">
-                                            <span class="event-title">#AndroidDevChallenge:Try Jetpack Compose</span>
-                                        </div>
-                                        <div class="row ed-alignment">
-                                            <span class="event-date">June 1st, 2021 3:00PM</span>
+                                    <div class="col ">
+                                        <div class="row et-alignment d-flex justify-content-center">
+                                            <span class="event-title" >No New Request</span>
                                         </div>
                                     </div>
                                 </div>
@@ -625,9 +645,87 @@
                        
                     </div>
                 </div>
-            </div>    
-                
-                
+            </div>  
+            <div class="mb-3 mb-md-4  d-flex">
+                <div class="h2 mb-0 mr-4 ml-auto " >
+                    <a href="edit.html"><button type="button" class="btn edit-button text-nowrap " >Add Chart</button></a>
+                </div>
+            </div>
+            
+            <div class="container-fluid box-container mb-3 mb-md-4 d-flex ">
+                <div class="row rbox-layout border d-flex align-items-center" >
+                    <div class="col-lg-4 col-md-6  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 0px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+                                <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                                <div class=" chart-container " id="container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 0px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class=" chart-container " id="container2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 0px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class=" chart-container " id="container3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
        
         <!-- Footer -->
@@ -674,5 +772,49 @@
     $.GDCore.components.GDChartistBar.init('.js-bar-chart');
     $.GDCore.components.GDChartistDonut.init('.js-donut-chart');
 </script>
+<script src="./indexchart.js"> </script>
+
+<script>initFunction('container', [
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 10000, color: '#FF6633' },
+    { x: 2, y: 8000, color: '#FF6633' },
+    { x: 3, y: 6000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ]); </script>
+<script>initFunction('container2',[
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 10000, color: '#FF6633' },
+    { x: 2, y: 8000, color: '#FF6633' },
+    { x: 3, y: 6000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ]); </script>
+<script>initFunction('container3',[
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 6000, color: '#FF6633' },
+    { x: 2, y: 10000, color: '#FF6633' },
+    { x: 3, y: 4000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ]); </script>
 </body>
 </html>
