@@ -113,6 +113,16 @@
         min-width: 110px;
 	    max-width: 500px;
      }
+     .mchart-container{
+        height: 350px; 
+        min-width: 110px;
+	    max-width: 600px;
+     }
+     .lchart-container{
+        height: 350px; 
+        min-width: 110px;
+	    max-width: 1250px;
+     }
      .event-title{
          font-size: 20px;
          color: white;
@@ -694,7 +704,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class=" chart-container " id="container2">
+                                <div class="chart-container " id="container2">
                                 </div>
                             </div>
                         </div>
@@ -723,8 +733,86 @@
                 </div>
             </div>
 
-
-
+            <div class="container-fluid box-container mb-3 mb-md-4 d-flex ">
+                <div class="row rbox-layout border d-flex align-items-center" >
+                    <div class="col-lg-6 col-md-6  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 25px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+                                <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                                <div class=" mchart-container " id="container4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 25px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+                                <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                                <div class=" mchart-container " id="container5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid box-container mb-3 mb-md-4 d-flex ">
+                <div class="row rbox-layout border d-flex align-items-center" >
+                    <div class="col-lg-12 col-md-12  col-sm-12 box-alignment " >
+                        <div class="row box-layout d-flex ">
+                            <div class="col " style="width: 100%; padding-right: 0px !important; align-items: center; ">
+                                <div class="row" style="width: 100%; padding-bottom: 25px;">
+                                    <div class="col-7">
+                                        <span class="box-header ">Turnover</span>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center justify-content-end" style="padding-right: 75px;">
+                                            <svg style="margin-bottom: -2px; margin-right: 10px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="8" fill="#0AA02B"/>
+                                            </svg>                                                
+                                        <span class="sales">
+                                            Sales 2021
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+                                <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                                <div class=" lchart-container " id="container6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
        
@@ -787,7 +875,7 @@
     { x: 9, y: 2000, color: '#FF6633' },
     { x: 10, y: 4000, color: '#FF6633' },
     { x: 11, y: 0, color: '#FF6633' },
-  ]); </script>
+  ], 500); </script>
 <script>initFunction('container2',[
     { x: 0, y: 0, color: '#FF6633' },
     { x: 1, y: 10000, color: '#FF6633' },
@@ -801,7 +889,7 @@
     { x: 9, y: 2000, color: '#FF6633' },
     { x: 10, y: 4000, color: '#FF6633' },
     { x: 11, y: 0, color: '#FF6633' },
-  ]); </script>
+  ], 500); </script>
 <script>initFunction('container3',[
     { x: 0, y: 0, color: '#FF6633' },
     { x: 1, y: 6000, color: '#FF6633' },
@@ -815,6 +903,48 @@
     { x: 9, y: 2000, color: '#FF6633' },
     { x: 10, y: 4000, color: '#FF6633' },
     { x: 11, y: 0, color: '#FF6633' },
-  ]); </script>
+  ], 500); </script>
+  <script>initFunction('container4',[
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 6000, color: '#FF6633' },
+    { x: 2, y: 10000, color: '#FF6633' },
+    { x: 3, y: 4000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ], 500); </script>
+  <script>initFunction('container5',[
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 6000, color: '#FF6633' },
+    { x: 2, y: 10000, color: '#FF6633' },
+    { x: 3, y: 4000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ], 700); </script>
+  <script>initFunction('container6',[
+    { x: 0, y: 0, color: '#FF6633' },
+    { x: 1, y: 6000, color: '#FF6633' },
+    { x: 2, y: 10000, color: '#FF6633' },
+    { x: 3, y: 4000, color: '#FF6633' },
+    { x: 4, y: 8000, color: '#FF6633' },
+    { x: 5, y: 4000, color: '#FF6633' },
+    { x: 6, y: 2000, color: '#FF6633' },
+    { x: 7, y: 6000, color: '#FF6633' },
+    { x: 8, y: 4000, color: '#FF6633' },
+    { x: 9, y: 2000, color: '#FF6633' },
+    { x: 10, y: 4000, color: '#FF6633' },
+    { x: 11, y: 0, color: '#FF6633' },
+  ], 1200); </script>
 </body>
 </html>

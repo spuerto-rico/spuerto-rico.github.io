@@ -1,4 +1,4 @@
-function initFunction(id, data) {
+function initFunction(id, data, width) {
   var chart = new Highcharts.Chart({
     plotOptions: {
       series: {
@@ -63,7 +63,7 @@ function initFunction(id, data) {
       rules: [
         {
           condition: {
-            maxWidth: 500,
+            maxWidth: width,
           },
           chartOptions: {
             legend: {
